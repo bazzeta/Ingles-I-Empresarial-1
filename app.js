@@ -24,7 +24,8 @@ const defaultState = {
   notes: {},
   srs: {},
   lastStudy: null,
-  streak: 0
+  streak: 0,
+  modulesNavOpen: true
 };
 let state = loadState();
 let currentQuiz = null;
@@ -123,29 +124,225 @@ const navItems = [
   ['practice','🧠','Practicar'],
   ['flashcards','🃏','Flashcards'],
   ['vocabulary','🔎','Vocabulario'],
+  ['verbs','📘','Verbos'],
   ['progress','📊','Progreso'],
   ['ai','🤖','Tutor IA'],
   ['settings','⚙️','Ajustes']
 ];
 const mobileNavItems = navItems.filter(i => ['home','modules','practice','progress'].includes(i[0]));
 
+const MODULE_DIALOGUES = {
+  1: [
+    {
+      title: 'Dialogue 1 — Saying hello and introducing yourself',
+      context: 'Para practicar saludos, presentaciones y despedidas.',
+      lines: [
+        ['A', 'Hello. My name is Luis.', 'Hola. Mi nombre es Luis.'],
+        ['B', 'Nice to meet you, Luis. I’m Ana.', 'Encantada de conocerte, Luis. Soy Ana.'],
+        ['A', 'Nice to meet you too. This is my colleague, Damaris.', 'Encantado de conocerte también. Esta es mi colega, Damaris.'],
+        ['B', 'Pleased to meet you, Damaris.', 'Mucho gusto, Damaris.'],
+        ['C', 'Pleased to meet you too.', 'Mucho gusto también.'],
+        ['A', 'See you soon. Goodbye.', 'Nos vemos pronto. Adiós.']
+      ]
+    },
+    {
+      title: 'Dialogue 2 — Spelling a name',
+      context: 'Para practicar cómo deletrear nombres y datos personales.',
+      lines: [
+        ['A', 'What’s your name?', '¿Cuál es tu nombre?'],
+        ['B', 'My name is Damaris.', 'Mi nombre es Damaris.'],
+        ['A', 'How do you spell that?', '¿Cómo se deletrea eso?'],
+        ['B', 'D-A-M-A-R-I-S.', 'D-A-M-A-R-I-S.'],
+        ['A', 'Thank you. And what’s your job?', 'Gracias. ¿Y cuál es tu trabajo?'],
+        ['B', 'I’m an architect and interior designer.', 'Soy arquitecta y diseñadora de interiores.']
+      ]
+    }
+  ],
+  2: [
+    {
+      title: 'Dialogue 1 — Booking by phone',
+      context: 'Para practicar pedidos y reservas por teléfono.',
+      lines: [
+        ['A', 'Good morning. Can I book a private room, please?', 'Buenos días. ¿Puedo reservar una sala privada, por favor?'],
+        ['B', 'Yes, of course. Can you give me your name, please?', 'Sí, por supuesto. ¿Puede darme su nombre, por favor?'],
+        ['A', 'My name is Luis Bazzeta.', 'Mi nombre es Luis Bazzeta.'],
+        ['B', 'Can you spell your surname?', '¿Puede deletrear su apellido?'],
+        ['A', 'B-A-Z-Z-E-T-A.', 'B-A-Z-Z-E-T-A.'],
+        ['B', 'Thank you. Can I confirm your booking by email?', 'Gracias. ¿Puedo confirmar su reserva por email?']
+      ]
+    },
+    {
+      title: 'Dialogue 2 — Ordering products',
+      context: 'Para practicar órdenes, repetición y confirmación.',
+      lines: [
+        ['A', 'Hello. I want to order some mobile phones.', 'Hola. Quiero ordenar algunos teléfonos móviles.'],
+        ['B', 'Certainly. Can you tell me the product code?', 'Por supuesto. ¿Puede decirme el código del producto?'],
+        ['A', 'DFK 1678.', 'DFK 1678.'],
+        ['B', 'Can you repeat that, please?', '¿Puede repetir eso, por favor?'],
+        ['A', 'DFK 1678.', 'DFK 1678.'],
+        ['B', 'Thank you. We can deliver them next week.', 'Gracias. Podemos entregarlos la próxima semana.']
+      ]
+    }
+  ],
+  3: [
+    {
+      title: 'Dialogue 1 — Starting and ending a telephone call',
+      context: 'Para practicar cómo iniciar y cerrar una llamada laboral.',
+      lines: [
+        ['A', 'Hello, the Dubai Grand Hotel. Can I help you?', 'Hola, Dubai Grand Hotel. ¿En qué puedo ayudarle?'],
+        ['B', 'Hello. This is Luis Bazzeta.', 'Hola. Habla Luis Bazzeta.'],
+        ['A', 'How can I help you?', '¿Cómo puedo ayudarle?'],
+        ['B', 'I’m calling about meeting rooms for next week.', 'Estoy llamando por salas de reunión para la próxima semana.'],
+        ['A', 'Certainly. We have conference rooms available.', 'Por supuesto. Tenemos salas de conferencia disponibles.'],
+        ['B', 'Thank you for your help. Goodbye.', 'Gracias por su ayuda. Adiós.']
+      ]
+    },
+    {
+      title: 'Dialogue 2 — Leaving a message',
+      context: 'Para practicar mensajes telefónicos y confirmar datos.',
+      lines: [
+        ['A', 'Could I speak to Teresa Baum, please?', '¿Podría hablar con Teresa Baum, por favor?'],
+        ['B', 'I’m sorry, but she isn’t here this morning. Can I take a message?', 'Lo siento, pero ella no está aquí esta mañana. ¿Puedo tomar un mensaje?'],
+        ['A', 'Yes. Could I leave a message for her?', 'Sí. ¿Podría dejarle un mensaje?'],
+        ['B', 'Of course. Can I have a contact number?', 'Por supuesto. ¿Me puede dar un número de contacto?'],
+        ['A', 'Yes. My number is 702 555 0184.', 'Sí. Mi número es 702 555 0184.'],
+        ['B', 'So that’s 702 555 0184. Is that right?', 'Entonces es 702 555 0184. ¿Es correcto?']
+      ]
+    }
+  ],
+  4: [
+    {
+      title: 'Dialogue 1 — Asking for help',
+      context: 'Para practicar pedir ayuda con tecnología.',
+      lines: [
+        ['A', 'Can you help me?', '¿Puedes ayudarme?'],
+        ['B', 'Yes, of course. What’s the problem?', 'Sí, por supuesto. ¿Cuál es el problema?'],
+        ['A', 'I’m trying to log on to the company website.', 'Estoy intentando iniciar sesión en el sitio web de la empresa.'],
+        ['B', 'Do you have your username and password?', '¿Tienes tu nombre de usuario y contraseña?'],
+        ['A', 'Yes, but I don’t know how to enter the password.', 'Sí, pero no sé cómo ingresar la contraseña.'],
+        ['B', 'No problem. I can give you a hand.', 'No hay problema. Puedo darte una mano.']
+      ]
+    },
+    {
+      title: 'Dialogue 2 — Offering help',
+      context: 'Para practicar ofrecer ayuda y responder.',
+      lines: [
+        ['A', 'Do you want a hand?', '¿Quieres una mano?'],
+        ['B', 'Yes, please. That would be good.', 'Sí, por favor. Eso estaría bien.'],
+        ['A', 'What are you trying to do?', '¿Qué estás intentando hacer?'],
+        ['B', 'I’m trying to print this document.', 'Estoy intentando imprimir este documento.'],
+        ['A', 'First, click on the printer icon. Then, push the button.', 'Primero, haz clic en el ícono de la impresora. Luego, presiona el botón.'],
+        ['B', 'Great. Thanks for your help.', 'Genial. Gracias por tu ayuda.']
+      ]
+    }
+  ],
+  5: [
+    {
+      title: 'Dialogue 1 — Apologizing',
+      context: 'Para practicar disculpas y razones en pasado.',
+      lines: [
+        ['A', 'I’m sorry I was late for the meeting.', 'Lo siento, llegué tarde a la reunión.'],
+        ['B', 'What happened?', '¿Qué pasó?'],
+        ['A', 'There were problems with the traffic this morning.', 'Hubo problemas con el tráfico esta mañana.'],
+        ['B', 'Don’t worry. The meeting started late too.', 'No te preocupes. La reunión también empezó tarde.'],
+        ['A', 'Thank you. I’ll arrive earlier next time.', 'Gracias. Llegaré más temprano la próxima vez.']
+      ]
+    },
+    {
+      title: 'Dialogue 2 — Solving problems',
+      context: 'Para practicar explicar problemas, prometer acción y agradecer.',
+      lines: [
+        ['A', 'We’ve got a problem with the order.', 'Tenemos un problema con el pedido.'],
+        ['B', 'What’s the problem exactly?', '¿Cuál es exactamente el problema?'],
+        ['A', 'The delivery was late, and some products didn’t arrive.', 'La entrega llegó tarde y algunos productos no llegaron.'],
+        ['B', 'I’m sorry. I’ll speak to the warehouse today.', 'Lo siento. Hablaré con el almacén hoy.'],
+        ['A', 'Can you let me know as soon as you can?', '¿Puedes avisarme tan pronto como puedas?'],
+        ['B', 'Yes, no problem. I’ll call you this afternoon.', 'Sí, no hay problema. Te llamaré esta tarde.']
+      ]
+    }
+  ]
+};
+
+
+
+function courseOf(m){ return m.course || (m.id <= 5 ? 'Inglés I' : 'Inglés II'); }
+function displayModuleNumber(m){ return m.moduleNo || m.id; }
+function groupedModules(){
+  const groups = [];
+  MODULES.forEach(m => {
+    const course = courseOf(m);
+    let g = groups.find(x => x.course === course);
+    if(!g){ g = {course, modules:[]}; groups.push(g); }
+    g.modules.push(m);
+  });
+  return groups;
+}
+
 function initNav(){
   const side = $('#sideNav');
-  side.innerHTML = navItems.map(([id,emo,label]) => `<button data-view="${id}" aria-label="${label}"><span class="emoji">${emo}</span><span>${label}</span></button>`).join('');
+  side.innerHTML = navItems.map(([id,emo,label]) => {
+    if(id !== 'modules') return `<button data-view="${id}" aria-label="${label}"><span class="emoji">${emo}</span><span>${label}</span></button>`;
+    return `<div class="nav-group ${state.modulesNavOpen ? 'open' : ''}" id="modulesNavGroup">
+      <button data-view="modules" data-toggle-submenu="modules" aria-label="${label}" aria-expanded="${state.modulesNavOpen ? 'true' : 'false'}">
+        <span class="emoji">${emo}</span><span>${label}</span><span class="submenu-arrow">▾</span>
+      </button>
+      <div class="nav-submenu" id="modulesSubmenu">
+        <button class="submenu-item all-modules" data-view="modules">Ver todos los módulos</button>
+        ${groupedModules().map(g => `<div class="submenu-label">${escapeHTML(g.course)}</div>${g.modules.map(m => `<button class="submenu-item" data-open-module="${m.id}">Módulo ${displayModuleNumber(m)} - ${escapeHTML(m.title)}</button>`).join('')}`).join('')}
+        <div class="submenu-label">Diálogos del libro</div>
+        ${groupedModules().map(g => `<div class="submenu-label">${escapeHTML(g.course)}</div>${g.modules.map(m => `<button class="submenu-item dialogue-subitem" data-dialogue-module="${m.id}">Diálogos Módulo ${displayModuleNumber(m)}</button>`).join('')}`).join('')}
+      </div>
+    </div>`;
+  }).join('');
   const bottom = $('#bottomNav');
   bottom.innerHTML = mobileNavItems.map(([id,emo,label]) => `<button data-view="${id}" aria-label="${label}"><span>${emo}</span><span>${label}</span></button>`).join('');
-  [...side.querySelectorAll('button'), ...bottom.querySelectorAll('button')].forEach(btn=>{
+  side.querySelectorAll('button[data-view]:not([data-toggle-submenu])').forEach(btn => {
+    btn.addEventListener('click', () => navigate(btn.dataset.view));
+  });
+  const modulesToggle = side.querySelector('[data-toggle-submenu="modules"]');
+  if(modulesToggle){
+    modulesToggle.addEventListener('click', () => {
+      state.modulesNavOpen = !state.modulesNavOpen;
+      saveState();
+      render();
+      if(state.view !== 'modules' && state.view !== 'module') navigate('modules');
+    });
+  }
+  side.querySelectorAll('[data-open-module]').forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      navigate('module', {module: btn.dataset.openModule});
+    });
+  });
+  side.querySelectorAll('[data-dialogue-module]').forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      state.modulesNavOpen = true;
+      navigate('dialogues', {module: btn.dataset.dialogueModule});
+    });
+  });
+  [...bottom.querySelectorAll('button')].forEach(btn=>{
     btn.addEventListener('click', () => navigate(btn.dataset.view));
   });
   bindSidebarControls();
 }
 function markActiveNav(){
   $$('[data-view]').forEach(btn => btn.classList.toggle('active', btn.dataset.view === state.view));
+  const modulesActive = state.view === 'modules' || state.view === 'module' || state.view === 'dialogues';
+  const mainModulesBtn = $('#modulesNavGroup > button[data-view="modules"]');
+  if(mainModulesBtn) mainModulesBtn.classList.toggle('active', modulesActive);
+  const bottomModulesBtn = $('.bottom-nav [data-view="modules"]');
+  if(bottomModulesBtn) bottomModulesBtn.classList.toggle('active', modulesActive);
+  $$('.submenu-item[data-open-module]').forEach(btn => btn.classList.toggle('active', Number(btn.dataset.openModule) === Number(state.activeModule) && state.view === 'module'));
+  $$('.submenu-item[data-dialogue-module]').forEach(btn => btn.classList.toggle('active', Number(btn.dataset.dialogueModule) === Number(state.activeModule) && state.view === 'dialogues'));
+  const allModulesBtn = $('.submenu-item.all-modules');
+  if(allModulesBtn) allModulesBtn.classList.toggle('active', state.view === 'modules');
 }
 function navigate(view, opts={}){
   state.view = view;
   if(opts.module) state.activeModule = opts.module;
   if(opts.section) state.activeSection = opts.section;
+  if(view === 'modules' || view === 'module') state.modulesNavOpen = true;
   saveState();
   render();
   window.scrollTo({top:0, behavior:'smooth'});
@@ -180,9 +377,11 @@ function render(){
   if(state.view === 'home') renderHome(app);
   if(state.view === 'modules') renderModules(app);
   if(state.view === 'module') renderModule(app, moduleById(state.activeModule));
+  if(state.view === 'dialogues') renderDialogues(app, moduleById(state.activeModule));
   if(state.view === 'practice') renderPractice(app);
   if(state.view === 'flashcards') renderFlashcards(app);
   if(state.view === 'vocabulary') renderVocabulary(app);
+  if(state.view === 'verbs') renderVerbs(app);
   if(state.view === 'progress') renderProgress(app);
   if(state.view === 'ai') renderAITutor(app);
   if(state.view === 'settings') renderSettings(app);
@@ -244,7 +443,7 @@ function moduleRoadmapCard(m){
   const vocabPreview = m.vocab.slice(0, 6).map(v => `<span>${escapeHTML(v.term)}</span>`).join('');
   return `<article class="card module-roadmap-card" data-module="${m.id}">
     <div class="roadmap-main">
-      <div class="roadmap-number" style="background:${m.color}">${m.id}</div>
+      <div class="roadmap-number" style="background:${m.color}">${displayModuleNumber(m)}</div>
       <div class="roadmap-copy">
         <span class="module-chip" style="background:${m.color}">${m.label}</span>
         <h2>${m.title} <small>/ ${m.spanishTitle}</small></h2>
@@ -264,9 +463,61 @@ function moduleRoadmapCard(m){
 }
 
 function renderModules(app){
-  app.innerHTML = `<section class="hero"><h1>Módulos de estudio</h1><p>Ahora están ordenados como un índice de Word: cada módulo muestra objetivos, vocabulario clave, progreso y las secciones en el orden real de lectura.</p></section>
-  <section class="section module-roadmap">${MODULES.map(moduleRoadmapCard).join('')}</section>`;
+  const openModule = Number(state.openRoadmapModule || MODULES[0].id);
+  app.innerHTML = `<section class="hero"><h1>Módulos de estudio</h1><p>Inglés I e Inglés II quedan separados para no mezclar contenidos. Inglés I trabaja Units 1-5; Inglés II trabaja Units 6-10 del mismo libro.</p></section>
+  <section class="section card course-map"><h2>Inglés I vs Inglés II</h2><div class="table-wrap"><table><tr><th>Curso</th><th>Unidades del libro</th><th>Enfoque</th></tr><tr><td>Inglés I</td><td>Units 1-5</td><td>Jobs, Products & Services, Location, Technology, Communication.</td></tr><tr><td>Inglés II</td><td>Units 6-10</td><td>Contacts, Departments, Employment, Competition, Teamwork.</td></tr></table></div></section>
+  ${groupedModules().map(g => `<section class="section module-accordion"><h2 class="course-title">${escapeHTML(g.course)}</h2>${g.modules.map(m => moduleAccordionItem(m, openModule === m.id)).join('')}</section>`).join('')}`;
+  $$('[data-open-module]', app).forEach(btn => btn.addEventListener('click', () => {
+    const mid = Number(btn.dataset.openModule);
+    state.openRoadmapModule = state.openRoadmapModule === mid ? 0 : mid;
+    saveState();
+    render();
+  }));
   bindCommon(app);
+}
+
+function moduleAccordionItem(m, isOpen){
+  const p = completionForModule(m);
+  const firstIncomplete = m.sections.find(s => !state.completed[`${m.id}:${s.id}`]) || m.sections[0];
+  const outline = m.sections.map((s, i) => {
+    const done = state.completed[`${m.id}:${s.id}`];
+    return `<li class="roadmap-section ${done ? 'done' : ''}"><span>${done ? '✓' : i + 1}</span>${escapeHTML(shortTitle(s.title))}</li>`;
+  }).join('');
+  const vocabPreview = m.vocab.slice(0, 8).map(v => `<span>${escapeHTML(v.term)}</span>`).join('');
+  return `<article class="card module-accordion-item ${isOpen ? 'open' : ''}">
+    <button class="module-accordion-trigger" data-open-module="${m.id}" aria-expanded="${isOpen ? 'true' : 'false'}">
+      <div class="accordion-head-left">
+        <div class="roadmap-number" style="background:${m.color}">${displayModuleNumber(m)}</div>
+        <div class="accordion-head-copy">
+          <em class="course-mini">${escapeHTML(courseOf(m))}</em>
+          <strong>${m.title} <small>/ ${m.spanishTitle}</small></strong>
+          <span>${p.done}/${p.total} secciones completadas</span>
+        </div>
+      </div>
+      <div class="accordion-head-right">
+        <div class="progress compact"><span style="width:${p.pct}%; background:${m.color}"></span></div>
+        <strong>${p.pct}%</strong>
+        <span class="accordion-arrow">▾</span>
+      </div>
+    </button>
+    <div class="module-accordion-panel">
+      <div class="module-roadmap-card">
+        <div class="roadmap-main">
+          <div class="roadmap-copy">
+            <h2>${m.title} <small>/ ${m.spanishTitle}</small></h2>
+            <p>${m.goals.slice(0, 3).map(escapeHTML).join(' · ')}</p>
+            <div class="vocab-pills">${vocabPreview}</div>
+          </div>
+        </div>
+        <div class="roadmap-outline">
+          <h3>Índice del módulo</h3>
+          <ol>${outline}</ol>
+          <button class="btn" data-module="${m.id}">Abrir módulo tipo Word</button>
+          <small>Próximo recomendado: ${escapeHTML(shortTitle(firstIncomplete.title))}</small>
+        </div>
+      </div>
+    </div>
+  </article>`;
 }
 function bindCommon(root){
   $$('[data-view]', root).forEach(b => b.addEventListener('click', () => navigate(b.dataset.view)));
@@ -391,6 +642,464 @@ function moduleDocumentSection(m, s, i){
   </article>`;
 }
 function shortTitle(t){ return t.replace(/^\d+\.\s*/, '').slice(0,52); }
+
+
+
+Object.assign(MODULE_DIALOGUES, {
+  "6": [
+    {
+      "title": "A business trip",
+      "context": "Practicar un viaje en pasado.",
+      "lines": [
+        [
+          "A",
+          "How was your trip?",
+          "¿Cómo fue tu viaje?"
+        ],
+        [
+          "B",
+          "It was very good.",
+          "Fue muy bueno."
+        ],
+        [
+          "A",
+          "Where did you go?",
+          "¿A dónde fuiste?"
+        ],
+        [
+          "B",
+          "I went to Santiago for a conference.",
+          "Fui a Santiago por una conferencia."
+        ],
+        [
+          "A",
+          "Did you meet new contacts?",
+          "¿Conociste nuevos contactos?"
+        ],
+        [
+          "B",
+          "Yes, I did. I met two suppliers.",
+          "Sí. Conocí a dos proveedores."
+        ]
+      ]
+    },
+    {
+      "title": "Arranging a meeting by email",
+      "context": "Practicar una reunión por email.",
+      "lines": [
+        [
+          "A",
+          "Are you free on Tuesday morning?",
+          "¿Estás libre el martes por la mañana?"
+        ],
+        [
+          "B",
+          "Yes, I am. What time is good for you?",
+          "Sí. ¿Qué horario te queda bien?"
+        ],
+        [
+          "A",
+          "Can we meet at ten?",
+          "¿Podemos reunirnos a las diez?"
+        ],
+        [
+          "B",
+          "Yes, that is fine.",
+          "Sí, está bien."
+        ],
+        [
+          "A",
+          "Great. I will send you a confirmation email.",
+          "Genial. Te enviaré un email de confirmación."
+        ]
+      ]
+    }
+  ],
+  "7": [
+    {
+      "title": "Finding a department",
+      "context": "Practicar indicaciones dentro de una empresa.",
+      "lines": [
+        [
+          "A",
+          "Excuse me. Where is the Finance department?",
+          "Disculpe. ¿Dónde está el departamento de Finanzas?"
+        ],
+        [
+          "B",
+          "It is on the second floor.",
+          "Está en el segundo piso."
+        ],
+        [
+          "A",
+          "How do I get there?",
+          "¿Cómo llego allí?"
+        ],
+        [
+          "B",
+          "Take the lift, go straight on, and turn left.",
+          "Tomá el ascensor, seguí derecho y doblá a la izquierda."
+        ],
+        [
+          "A",
+          "Is it next to Human Resources?",
+          "¿Está al lado de Recursos Humanos?"
+        ],
+        [
+          "B",
+          "Yes, it is opposite the meeting room.",
+          "Sí, está frente a la sala de reuniones."
+        ]
+      ]
+    },
+    {
+      "title": "Taking a message",
+      "context": "Practicar mensajes telefónicos.",
+      "lines": [
+        [
+          "A",
+          "Could I speak to Mr. Green, please?",
+          "¿Podría hablar con el Sr. Green, por favor?"
+        ],
+        [
+          "B",
+          "I am sorry, but he is not available. Can I take a message?",
+          "Lo siento, no está disponible. ¿Puedo tomar un mensaje?"
+        ],
+        [
+          "A",
+          "Yes. Please ask him to call me back.",
+          "Sí. Por favor dígale que me devuelva la llamada."
+        ],
+        [
+          "B",
+          "Can I have your phone number?",
+          "¿Me da su número de teléfono?"
+        ],
+        [
+          "A",
+          "Yes. It is 702 555 0148.",
+          "Sí. Es 702 555 0148."
+        ],
+        [
+          "B",
+          "So that is 702 555 0148. Is that right?",
+          "Entonces es 702 555 0148. ¿Es correcto?"
+        ]
+      ]
+    }
+  ],
+  "8": [
+    {
+      "title": "Arranging an interview",
+      "context": "Practicar horarios y citas.",
+      "lines": [
+        [
+          "A",
+          "Good morning. Are you available for an interview on Monday?",
+          "Buenos días. ¿Está disponible para una entrevista el lunes?"
+        ],
+        [
+          "B",
+          "Yes, I am. What time is convenient?",
+          "Sí. ¿Qué horario es conveniente?"
+        ],
+        [
+          "A",
+          "Can we meet at quarter past ten?",
+          "¿Podemos reunirnos a las diez y cuarto?"
+        ],
+        [
+          "B",
+          "Yes, that is fine.",
+          "Sí, está bien."
+        ],
+        [
+          "A",
+          "Please bring your CV.",
+          "Por favor traiga su currículum."
+        ],
+        [
+          "B",
+          "Of course. Thank you.",
+          "Por supuesto. Gracias."
+        ]
+      ]
+    },
+    {
+      "title": "At work now",
+      "context": "Practicar Present Continuous.",
+      "lines": [
+        [
+          "A",
+          "What are you doing now?",
+          "¿Qué estás haciendo ahora?"
+        ],
+        [
+          "B",
+          "I am preparing a customer report.",
+          "Estoy preparando un informe de cliente."
+        ],
+        [
+          "A",
+          "Is Ana working with you?",
+          "¿Ana está trabajando con vos?"
+        ],
+        [
+          "B",
+          "No, she is interviewing a candidate.",
+          "No, ella está entrevistando a un candidato."
+        ],
+        [
+          "A",
+          "Are they hiring a marketing assistant?",
+          "¿Están contratando un asistente de marketing?"
+        ],
+        [
+          "B",
+          "Yes, they are.",
+          "Sí."
+        ]
+      ]
+    }
+  ],
+  "9": [
+    {
+      "title": "Comparing two products",
+      "context": "Practicar comparativos y precios.",
+      "lines": [
+        [
+          "A",
+          "Which laptop is better?",
+          "¿Qué laptop es mejor?"
+        ],
+        [
+          "B",
+          "The blue one is faster, but it is more expensive.",
+          "La azul es más rápida, pero es más cara."
+        ],
+        [
+          "A",
+          "How much does it cost?",
+          "¿Cuánto cuesta?"
+        ],
+        [
+          "B",
+          "It costs eight hundred dollars.",
+          "Cuesta ochocientos dólares."
+        ],
+        [
+          "A",
+          "Is the black one cheaper?",
+          "¿La negra es más barata?"
+        ],
+        [
+          "B",
+          "Yes, but the battery is worse.",
+          "Sí, pero la batería es peor."
+        ]
+      ]
+    },
+    {
+      "title": "A competitive company",
+      "context": "Practicar presentación breve.",
+      "lines": [
+        [
+          "A",
+          "Why is your company competitive?",
+          "¿Por qué tu empresa es competitiva?"
+        ],
+        [
+          "B",
+          "Our prices are lower than our competitors.",
+          "Nuestros precios son más bajos que los de nuestros competidores."
+        ],
+        [
+          "A",
+          "What about quality?",
+          "¿Qué pasa con la calidad?"
+        ],
+        [
+          "B",
+          "Our quality is better, and our delivery is faster.",
+          "Nuestra calidad es mejor y nuestra entrega es más rápida."
+        ],
+        [
+          "A",
+          "That sounds good.",
+          "Eso suena bien."
+        ],
+        [
+          "B",
+          "Yes, customers like our service.",
+          "Sí, a los clientes les gusta nuestro servicio."
+        ]
+      ]
+    }
+  ],
+  "10": [
+    {
+      "title": "Reacting to news",
+      "context": "Practicar reacciones.",
+      "lines": [
+        [
+          "A",
+          "I have good news. We finished the project early.",
+          "Tengo buenas noticias. Terminamos el proyecto antes de tiempo."
+        ],
+        [
+          "B",
+          "That is great news! Congratulations!",
+          "¡Qué buena noticia! ¡Felicitaciones!"
+        ],
+        [
+          "A",
+          "Thank you. The team worked very well.",
+          "Gracias. El equipo trabajó muy bien."
+        ],
+        [
+          "B",
+          "Who was the most organized person?",
+          "¿Quién fue la persona más organizada?"
+        ],
+        [
+          "A",
+          "Ana was the most organized.",
+          "Ana fue la más organizada."
+        ],
+        [
+          "B",
+          "Excellent. She is a great team member.",
+          "Excelente. Es una gran integrante del equipo."
+        ]
+      ]
+    },
+    {
+      "title": "Opinions about teamwork",
+      "context": "Practicar opiniones y superlativos.",
+      "lines": [
+        [
+          "A",
+          "What do you think about teamwork?",
+          "¿Qué pensás sobre el trabajo en equipo?"
+        ],
+        [
+          "B",
+          "I think it is the best way to solve problems.",
+          "Creo que es la mejor forma de resolver problemas."
+        ],
+        [
+          "A",
+          "I agree. Communication is the most important thing.",
+          "Estoy de acuerdo. La comunicación es lo más importante."
+        ],
+        [
+          "B",
+          "Yes, and a good team leader is important too.",
+          "Sí, y un buen líder de equipo también es importante."
+        ],
+        [
+          "A",
+          "What is the most difficult part?",
+          "¿Cuál es la parte más difícil?"
+        ],
+        [
+          "B",
+          "The most difficult part is organizing everybody.",
+          "La parte más difícil es organizar a todos."
+        ]
+      ]
+    }
+  ]
+});
+
+function renderDialogues(app, m){
+  if(!m) m = moduleById(1);
+  state.activeModule = m.id;
+  state.modulesNavOpen = true;
+  saveState();
+  const dialogues = MODULE_DIALOGUES[m.id] || [];
+  app.innerHTML = `<section class="hero"><h1>Diálogos del módulo ${m.id}</h1><p>${escapeHTML(m.title)} / ${escapeHTML(m.spanishTitle)}. Practicá los diálogos relacionados con este módulo. Tocá cualquier línea en inglés para escucharla con voz IA.</p>
+    <div class="hero-actions">
+      <button class="btn secondary" data-view="modules">Ver módulos</button>
+      <button class="btn secondary" data-module="${m.id}">Abrir módulo completo</button>
+    </div>
+  </section>
+  <section class="section dialogues-layout">
+    <aside class="card dialogue-module-list">
+      <h2>Elegir módulo</h2>
+      ${MODULES.map(mod => `<button class="${mod.id === m.id ? 'active' : ''}" data-dialogue-switch="${mod.id}"><span style="background:${mod.color}">${displayModuleNumber(mod)}</span>${escapeHTML(courseOf(mod))}: ${escapeHTML(mod.title)}</button>`).join('')}
+    </aside>
+    <div class="dialogue-content">
+      ${dialogues.map((d, index) => dialogueCard(d, index, m.color)).join('')}
+      <article class="card dialogue-practice">
+        <h2>Cómo practicar</h2>
+        <ol>
+          <li>Escuchá cada línea tocando el texto en inglés.</li>
+          <li>Repetí en voz alta imitando la pronunciación.</li>
+          <li>Cambiá los datos por los tuyos: nombre, empresa, número o problema.</li>
+          <li>Usá la barra de velocidad para escuchar más lento si lo necesitás.</li>
+        </ol>
+      </article>
+    </div>
+  </section>`;
+  $$('[data-dialogue-switch]', app).forEach(btn => btn.addEventListener('click', () => navigate('dialogues', {module: btn.dataset.dialogueSwitch})));
+  $$('[data-action="speak-dialogue"]', app).forEach(btn => btn.addEventListener('click', () => speak(btn.dataset.speakText || '')));
+  $$('[data-speak-line]', app).forEach(line => line.addEventListener('click', () => speak(line.dataset.speakLine || '')));
+  bindCommon(app);
+}
+
+function dialogueCard(d, index, color){
+  const allText = d.lines.map(line => line[1]).join(' ');
+  return `<article class="card dialogue-card">
+    <header class="dialogue-head">
+      <div><span class="doc-section-number" style="background:${color}">${index + 1}</span><h2>${escapeHTML(d.title)}</h2><p>${escapeHTML(d.context)}</p></div>
+      <button class="btn secondary" data-action="speak-dialogue" data-speak-text="${escapeAttr(allText)}">🔊 Escuchar todo</button>
+    </header>
+    <div class="dialogue-lines">
+      ${d.lines.map(([speaker, line, translation]) => `<div class="dialogue-line"><strong>${escapeHTML(speaker)}</strong><span class="dialogue-english" data-speak-line="${escapeAttr(line)}">${escapeHTML(line)} ${translation ? `<em class="dialogue-translation">(${escapeHTML(translation)})</em>` : ''}</span><button class="icon-btn" data-action="speak-dialogue" data-speak-text="${escapeAttr(line)}" aria-label="Escuchar línea">🔊</button></div>`).join('')}
+    </div>
+  </article>`;
+}
+
+
+
+
+function renderVerbs(app){
+  const everyday = [
+    ['be','ser / estar','I am ready.','Estoy listo.'], ['have','tener','I have a meeting.','Tengo una reunión.'], ['do','hacer','I do my work.','Hago mi trabajo.'], ['go','ir','I go to work.','Voy al trabajo.'], ['come','venir','She comes home at six.','Ella viene a casa a las seis.'], ['get','obtener / llegar','I get up early.','Me levanto temprano.'], ['make','hacer / crear','I make coffee.','Hago café.'], ['take','tomar / llevar','I take a break.','Tomo un descanso.'], ['give','dar','Can you give me a hand?','¿Puedes darme una mano?'], ['need','necesitar','I need help.','Necesito ayuda.'], ['want','querer','I want to practice.','Quiero practicar.'], ['like','gustar','I like English.','Me gusta el inglés.'], ['know','saber / conocer','I know the answer.','Sé la respuesta.'], ['think','pensar','I think it is important.','Creo que es importante.'], ['say','decir','What did she say?','¿Qué dijo ella?'], ['tell','decir / contar','Can you tell me the price?','¿Puedes decirme el precio?'], ['speak','hablar','I speak English slowly.','Hablo inglés despacio.'], ['read','leer','Read the dialogue.','Lee el diálogo.'], ['write','escribir','Write an email.','Escribe un email.'], ['meet','reunirse / conocer','I met a supplier yesterday.','Me reuní con un proveedor ayer.'], ['travel','viajar','She travelled last month.','Ella viajó el mes pasado.']
+  ];
+  const business = [
+    ['work for','trabajar para','I work for Amazon.','Trabajo para Amazon.'], ['work with','trabajar con','I work with colleagues.','Trabajo con colegas.'], ['produce','producir','The company produces software.','La empresa produce software.'], ['provide','proveer / brindar','We provide services.','Brindamos servicios.'], ['sell','vender','They sell products online.','Venden productos online.'], ['buy','comprar','We buy office supplies.','Compramos suministros de oficina.'], ['order','pedir / ordenar','I want to order laptops.','Quiero pedir laptops.'], ['book','reservar','Can I book a room?','¿Puedo reservar una sala?'], ['confirm','confirmar','Can you confirm by email?','¿Puede confirmar por email?'], ['deliver','entregar','We deliver next week.','Entregamos la próxima semana.'], ['receive','recibir','I received an invoice.','Recibí una factura.'], ['send','enviar','Send the document, please.','Envía el documento, por favor.'], ['attach','adjuntar','Attach the order form.','Adjunta el formulario de pedido.'], ['print','imprimir','Print a hard copy.','Imprime una copia en papel.'], ['forward','reenviar','Forward the email to me.','Reenvíame el email.'], ['call','llamar','I will call the customer.','Llamaré al cliente.'], ['contact','contactar','Contact the supplier.','Contacta al proveedor.'], ['compare','comparar','Compare the two companies.','Compará las dos empresas.'], ['choose','elegir','Choose the best option.','Elegí la mejor opción.'], ['arrange','organizar / acordar','Can we arrange a meeting?','¿Podemos acordar una reunión?']
+  ];
+  const tenses = [
+    ['Verb BE - Present','am / is / are','I am ready. She is an architect. They are colleagues.','Presente del verbo ser/estar.'],
+    ['Present Simple','base verb / he-she-it + s','We work in Sales. The company produces software.','Rutinas, hechos generales y actividades habituales.'],
+    ['Present Continuous','am/is/are + verb-ing','I am studying. She is preparing a report.','Acciones ahora o situaciones temporales.'],
+    ['Past Simple - regular','verb + ed','I called the customer yesterday.','Acciones terminadas en el pasado.'],
+    ['Past Simple - irregular','went / had / met / sent','We went to a conference last week.','Pasado con formas irregulares.'],
+    ['Future with will','will + base verb','I will call you tomorrow.','Promesas, decisiones rápidas y futuro simple.'],
+    ['Future with going to','am/is/are going to + verb','We are going to meet next Monday.','Planes e intenciones.'],
+    ['Present Perfect','have/has + past participle','I have sent the email.','Experiencia o acciones con resultado presente.'],
+    ['Modal CAN','can + base verb','Can you help me? I can speak English.','Habilidad, permiso o pedido informal.'],
+    ['Modal COULD','could + base verb','Could I leave a message?','Pedido más formal o posibilidad.'],
+    ['Imperative','base verb','Go straight on. Turn left. Do not enter.','Instrucciones, órdenes o indicaciones.']
+  ];
+  app.innerHTML = `<section class="hero"><h1>Centro de Verbos y Tiempos Verbales</h1><p>Una sección completa para Inglés I e Inglés II: verbos básicos, tiempos verbales, pasado, futuro, modales, imperativos, verbos cotidianos y verbos de empresa. Tocá cualquier frase en inglés para escucharla.</p></section>
+  <section class="section card"><h2>Mapa general de tiempos verbales</h2><div class="table-wrap"><table><thead><tr><th>Tiempo / estructura</th><th>Forma</th><th>Ejemplo</th><th>Uso</th></tr></thead><tbody>${tenses.map(row => `<tr>${row.map(c => `<td class="speak-cell">${escapeHTML(c)}</td>`).join('')}</tr>`).join('')}</tbody></table></div></section>
+  <section class="section verb-grid">
+    <article class="card verb-card"><h2>Reglas rápidas</h2><ul><li><strong>He / She / It:</strong> en Present Simple agrega -s o -es: works, produces, goes.</li><li><strong>Preguntas en presente:</strong> Do you...? / Does she...?</li><li><strong>Negativo en presente:</strong> don’t / doesn’t + verbo base.</li><li><strong>Preguntas en pasado:</strong> Did you...? El verbo vuelve a base.</li><li><strong>Futuro:</strong> will para decisión/promesa; going to para plan.</li><li><strong>Modal verbs:</strong> can, could, will van con verbo base.</li></ul></article>
+    <article class="card verb-card"><h2>Errores típicos</h2><ul><li>Incorrecto: <strong>She work</strong>. Correcto: <strong>She works</strong>.</li><li>Incorrecto: <strong>Does she works?</strong> Correcto: <strong>Does she work?</strong></li><li>Incorrecto: <strong>I didn’t went</strong>. Correcto: <strong>I didn’t go</strong>.</li><li>Incorrecto: <strong>Can you to help me?</strong> Correcto: <strong>Can you help me?</strong></li></ul></article>
+  </section>
+  <section class="section verb-grid"><article class="card"><h2>Verbos más usados en la vida cotidiana</h2>${verbList(everyday)}</article><article class="card"><h2>Verbos más usados en empresa / trabajo</h2>${verbList(business)}</article></section>
+  <section class="section card verb-practice"><h2>Mini práctica guiada</h2><p>Completá mentalmente y después abrí la respuesta.</p><details><summary>1. She ____ in Finance.</summary><strong>works</strong> - Present Simple, he/she/it + s.</details><details><summary>2. I ____ preparing a report now.</summary><strong>am</strong> - Present Continuous.</details><details><summary>3. We ____ to a conference last week.</summary><strong>went</strong> - Past Simple irregular.</details><details><summary>4. I ____ call you tomorrow.</summary><strong>will</strong> - Future Simple.</details><details><summary>5. Could I ____ a message?</summary><strong>leave</strong> - modal + base verb.</details></section>`;
+  $$('[data-speak-verb]', app).forEach(el => el.addEventListener('click', () => speak(el.dataset.speakVerb || '')));
+  bindCommon(app);
+}
+
+function verbList(items){
+  return `<div class="verb-list">${items.map(([verb, translation, example, exampleEs]) => `<div class="verb-row"><strong>${escapeHTML(verb)}</strong><span>${escapeHTML(translation)}</span><p><span class="verb-example" data-speak-verb="${escapeAttr(example)}">${escapeHTML(example)}</span> <em>(${escapeHTML(exampleEs)})</em></p></div>`).join('')}</div>`;
+}
 
 function renderVocabulary(app){
   const mid = state.vocabModule || 'all';

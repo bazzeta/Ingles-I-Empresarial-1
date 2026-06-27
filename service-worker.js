@@ -1,4 +1,4 @@
-const CACHE_NAME = 'ingles-i-study-hub-v5-quick-tabs-mobile-fit';
+const CACHE_NAME = 'ingles-study-hub-v10-ingles-ii';
 const ASSETS = ['./','./index.html','./styles.css','./app.js','./modules-data.js','./manifest.json','./icons/icon.svg'];
 self.addEventListener('install', event => { event.waitUntil(caches.open(CACHE_NAME).then(cache => cache.addAll(ASSETS))); self.skipWaiting(); });
 self.addEventListener('activate', event => { event.waitUntil(caches.keys().then(keys => Promise.all(keys.filter(k => k !== CACHE_NAME).map(k => caches.delete(k))))); self.clients.claim(); });

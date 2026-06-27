@@ -1,7 +1,7 @@
 window.MODULES = [
   {
     "id": 1,
-    "label": "Módulo 1",
+    "label": "Inglés I - Módulo 1",
     "title": "Jobs",
     "spanishTitle": "Trabajos",
     "color": "#2563eb",
@@ -323,11 +323,13 @@ window.MODULES = [
         "q": "Translate: recepcionista",
         "answer": "receptionist"
       }
-    ]
+    ],
+    "course": "Inglés I",
+    "moduleNo": 1
   },
   {
     "id": 2,
-    "label": "Módulo 2",
+    "label": "Inglés I - Módulo 2",
     "title": "Products & Services",
     "spanishTitle": "Productos y servicios",
     "color": "#ea580c",
@@ -595,11 +597,13 @@ window.MODULES = [
         "q": "Translate: producir",
         "answer": "produce"
       }
-    ]
+    ],
+    "course": "Inglés I",
+    "moduleNo": 2
   },
   {
     "id": 3,
-    "label": "Módulo 3",
+    "label": "Inglés I - Módulo 3",
     "title": "Location",
     "spanishTitle": "Ubicación",
     "color": "#16a34a",
@@ -866,11 +870,13 @@ window.MODULES = [
         "q": "Translate: oficina central",
         "answer": "head office"
       }
-    ]
+    ],
+    "course": "Inglés I",
+    "moduleNo": 3
   },
   {
     "id": 4,
-    "label": "Módulo 4",
+    "label": "Inglés I - Módulo 4",
     "title": "Technology",
     "spanishTitle": "Tecnología",
     "color": "#7c3aed",
@@ -1162,11 +1168,13 @@ window.MODULES = [
         "q": "Translate: pantalla",
         "answer": "screen"
       }
-    ]
+    ],
+    "course": "Inglés I",
+    "moduleNo": 4
   },
   {
     "id": 5,
-    "label": "Módulo 5",
+    "label": "Inglés I - Módulo 5",
     "title": "Communication",
     "spanishTitle": "Comunicación",
     "color": "#0891b2",
@@ -1468,6 +1476,1038 @@ window.MODULES = [
         "type": "fill",
         "q": "Translate: factura",
         "answer": "invoice"
+      }
+    ],
+    "course": "Inglés I",
+    "moduleNo": 5
+  },
+  {
+    "id": 6,
+    "moduleNo": 1,
+    "course": "Inglés II",
+    "label": "Inglés II - Módulo 1",
+    "title": "Contacts",
+    "spanishTitle": "Red de contactos",
+    "color": "#2563eb",
+    "goals": [
+      "Hablar de redes sociales y contactos profesionales",
+      "Hablar de hechos pasados",
+      "Describir un viaje",
+      "Usar Past Simple con verbos regulares e irregulares",
+      "Escribir emails breves para arreglar una reunión"
+    ],
+    "sections": [
+      {
+        "id": "intro",
+        "title": "Introducción",
+        "html": "<p class=\"lead\">INGLÉS II - MÓDULO 1</p><p class=\"lead\">Contacts / Red de contactos</p><p>Resumen completo con vocabulario, gramática, frases, diálogos y ejercicios de repaso.</p><div class=\"table-wrap\"><table><tr><th>Objetivo: volver a aprender el contenido del módulo 1: hablar de redes sociales y contactos profesionales, hablar de hechos pasados, describir un viaje, usar past simple con verbos regulares e irregulares, escribir emails breves para arreglar una reunión.</th></tr></table></div>"
+      },
+      {
+        "id": "goals",
+        "title": "1. Qué tenés que saber al terminar este módulo",
+        "html": "<h2>1. Qué tenés que saber al terminar este módulo</h2><ul class=\"content-list\"><li>Hablar de redes sociales y contactos profesionales</li><li>Hablar de hechos pasados</li><li>Describir un viaje</li><li>Usar Past Simple con verbos regulares e irregulares</li><li>Escribir emails breves para arreglar una reunión</li></ul>"
+      },
+      {
+        "id": "vocab",
+        "title": "2. Vocabulario principal",
+        "html": "<h2>2. Vocabulario principal</h2><h3>Social networks / Redes sociales</h3><div class=\"table-wrap\"><table><tr><th>English</th><th>Español</th><th>Ejemplo</th></tr><tr><td class=\"speak-cell\">contact</td><td class=\"speak-cell\">contacto</td><td class=\"speak-cell\">I have many business contacts.</td></tr><tr><td class=\"speak-cell\">profile</td><td class=\"speak-cell\">perfil</td><td class=\"speak-cell\">Update your online profile.</td></tr><tr><td class=\"speak-cell\">network</td><td class=\"speak-cell\">red</td><td class=\"speak-cell\">LinkedIn is a professional network.</td></tr><tr><td class=\"speak-cell\">website</td><td class=\"speak-cell\">sitio web</td><td class=\"speak-cell\">The company has a new website.</td></tr><tr><td class=\"speak-cell\">message</td><td class=\"speak-cell\">mensaje</td><td class=\"speak-cell\">Send me a message.</td></tr><tr><td class=\"speak-cell\">colleague</td><td class=\"speak-cell\">colega</td><td class=\"speak-cell\">I met a colleague yesterday.</td></tr><tr><td class=\"speak-cell\">customer</td><td class=\"speak-cell\">cliente</td><td class=\"speak-cell\">We contacted a customer.</td></tr><tr><td class=\"speak-cell\">supplier</td><td class=\"speak-cell\">proveedor</td><td class=\"speak-cell\">The supplier called this morning.</td></tr></table></div><h3>Trips / Viajes</h3><div class=\"table-wrap\"><table><tr><th>English</th><th>Español</th><th>Ejemplo</th></tr><tr><td class=\"speak-cell\">trip</td><td class=\"speak-cell\">viaje</td><td class=\"speak-cell\">How was your trip?</td></tr><tr><td class=\"speak-cell\">flight</td><td class=\"speak-cell\">vuelo</td><td class=\"speak-cell\">The flight was late.</td></tr><tr><td class=\"speak-cell\">hotel</td><td class=\"speak-cell\">hotel</td><td class=\"speak-cell\">The hotel was near the office.</td></tr><tr><td class=\"speak-cell\">conference</td><td class=\"speak-cell\">conferencia</td><td class=\"speak-cell\">I went to a conference.</td></tr><tr><td class=\"speak-cell\">meeting</td><td class=\"speak-cell\">reunión</td><td class=\"speak-cell\">We had a meeting in Madrid.</td></tr><tr><td class=\"speak-cell\">airport</td><td class=\"speak-cell\">aeropuerto</td><td class=\"speak-cell\">I arrived at the airport at nine.</td></tr><tr><td class=\"speak-cell\">ticket</td><td class=\"speak-cell\">pasaje / ticket</td><td class=\"speak-cell\">I booked the ticket online.</td></tr><tr><td class=\"speak-cell\">schedule</td><td class=\"speak-cell\">cronograma</td><td class=\"speak-cell\">The schedule was very busy.</td></tr></table></div><h3>Past time expressions / Expresiones de tiempo pasado</h3><div class=\"table-wrap\"><table><tr><th>English</th><th>Español</th><th>Ejemplo</th></tr><tr><td class=\"speak-cell\">yesterday</td><td class=\"speak-cell\">ayer</td><td class=\"speak-cell\">I called yesterday.</td></tr><tr><td class=\"speak-cell\">last week</td><td class=\"speak-cell\">la semana pasada</td><td class=\"speak-cell\">We met last week.</td></tr><tr><td class=\"speak-cell\">last month</td><td class=\"speak-cell\">el mes pasado</td><td class=\"speak-cell\">She travelled last month.</td></tr><tr><td class=\"speak-cell\">two days ago</td><td class=\"speak-cell\">hace dos días</td><td class=\"speak-cell\">I sent the email two days ago.</td></tr><tr><td class=\"speak-cell\">in 2023</td><td class=\"speak-cell\">en 2023</td><td class=\"speak-cell\">I started the course in 2023.</td></tr><tr><td class=\"speak-cell\">this morning</td><td class=\"speak-cell\">esta mañana</td><td class=\"speak-cell\">He arrived this morning.</td></tr></table></div>"
+      },
+      {
+        "id": "grammar",
+        "title": "3. Gramática del módulo",
+        "html": "<h2>3. Gramática del módulo</h2><h3>Past Simple - uso</h3><p>Usamos Past Simple para acciones terminadas en el pasado. Suele aparecer con yesterday, last week, two days ago, in 2023.</p><div class=\"table-wrap\"><table><tr><th>English</th><th>Español</th></tr><tr><td class=\"speak-cell\">I visited a customer yesterday.</td><td class=\"speak-cell\">Visité a un cliente ayer.</td></tr><tr><td class=\"speak-cell\">We went to Chile last month.</td><td class=\"speak-cell\">Fuimos a Chile el mes pasado.</td></tr></table></div><h3>Past Simple - afirmativo</h3><p>Con verbos regulares agregamos -ed. Con verbos irregulares usamos una forma especial que hay que memorizar.</p><div class=\"table-wrap\"><table><tr><th>English</th><th>Español</th></tr><tr><td class=\"speak-cell\">work -&gt; worked</td><td class=\"speak-cell\">trabajar -&gt; trabajé/trabajó</td></tr><tr><td class=\"speak-cell\">go -&gt; went</td><td class=\"speak-cell\">ir -&gt; fui/fue</td></tr><tr><td class=\"speak-cell\">have -&gt; had</td><td class=\"speak-cell\">tener -&gt; tuve/tuvo</td></tr><tr><td class=\"speak-cell\">meet -&gt; met</td><td class=\"speak-cell\">conocer/reunirse -&gt; conocí/se reunió</td></tr></table></div><h3>Past Simple - negativo y preguntas</h3><p>Para negativos y preguntas usamos did / didn&#x27;t y el verbo vuelve a la forma base.</p><div class=\"table-wrap\"><table><tr><th>English</th><th>Español</th></tr><tr><td class=\"speak-cell\">I didn&#x27;t travel last week.</td><td class=\"speak-cell\">No viajé la semana pasada.</td></tr><tr><td class=\"speak-cell\">Did you meet the supplier?</td><td class=\"speak-cell\">¿Te reuniste con el proveedor?</td></tr><tr><td class=\"speak-cell\">Yes, I did. / No, I didn&#x27;t.</td><td class=\"speak-cell\">Sí. / No.</td></tr></table></div>"
+      },
+      {
+        "id": "phrases",
+        "title": "4. Frases base del módulo",
+        "html": "<h2>4. Frases base del módulo</h2><div class=\"table-wrap\"><table><tr><th>English</th><th>Uso / Español</th></tr><tr><td class=\"speak-cell\">How was your trip?</td><td class=\"speak-cell\">Preguntar cómo fue un viaje.</td></tr><tr><td class=\"speak-cell\">Where did you go?</td><td class=\"speak-cell\">Preguntar dónde fue alguien.</td></tr><tr><td class=\"speak-cell\">I went to Mendoza.</td><td class=\"speak-cell\">Responder sobre un lugar visitado.</td></tr><tr><td class=\"speak-cell\">Would you like to meet next week?</td><td class=\"speak-cell\">Proponer una reunión.</td></tr><tr><td class=\"speak-cell\">Are you free on Monday?</td><td class=\"speak-cell\">Preguntar disponibilidad.</td></tr><tr><td class=\"speak-cell\">Can we meet at 10?</td><td class=\"speak-cell\">Confirmar horario.</td></tr><tr><td class=\"speak-cell\">Best regards,</td><td class=\"speak-cell\">Cierre de email formal simple.</td></tr></table></div>"
+      },
+      {
+        "id": "key-expressions",
+        "title": "KEY EXPRESSIONS / FRASES CLAVE DEL LIBRO",
+        "html": "<div class=\"annex-block\"><h2>KEY EXPRESSIONS / FRASES CLAVE DEL LIBRO</h2><p>Frases clave del módulo para practicar en voz alta. Tocá cualquier frase en inglés para escucharla.</p><div class=\"table-wrap\"><table><tr><th>Función</th><th>Key expression</th><th>Español / uso</th></tr><tr><td class=\"speak-cell\">Asking about a trip</td><td class=\"speak-cell\">How was your trip?</td><td class=\"speak-cell\">Preguntar cómo fue un viaje.</td></tr><tr><td class=\"speak-cell\">Past event</td><td class=\"speak-cell\">Where did you go?</td><td class=\"speak-cell\">Preguntar dónde fue alguien.</td></tr><tr><td class=\"speak-cell\">Past answer</td><td class=\"speak-cell\">I went to Mendoza.</td><td class=\"speak-cell\">Responder sobre un lugar visitado.</td></tr><tr><td class=\"speak-cell\">Meeting request</td><td class=\"speak-cell\">Would you like to meet next week?</td><td class=\"speak-cell\">Proponer una reunión.</td></tr><tr><td class=\"speak-cell\">Availability</td><td class=\"speak-cell\">Are you free on Monday?</td><td class=\"speak-cell\">Preguntar disponibilidad.</td></tr><tr><td class=\"speak-cell\">Confirmation</td><td class=\"speak-cell\">Can we meet at 10?</td><td class=\"speak-cell\">Confirmar horario.</td></tr><tr><td class=\"speak-cell\">Email closing</td><td class=\"speak-cell\">Best regards,</td><td class=\"speak-cell\">Cierre de email formal simple.</td></tr></table></div></div>"
+      },
+      {
+        "id": "dialogues",
+        "title": "5. Diálogos del módulo",
+        "html": "<h2>5. Diálogos del módulo</h2><h3>A business trip</h3><p>Practicar un viaje en pasado.</p><div class=\"table-wrap\"><table><tr><th>Speaker</th><th>English</th><th>Español</th></tr><tr><td class=\"speak-cell\">A</td><td class=\"speak-cell\">How was your trip?</td><td class=\"speak-cell\">¿Cómo fue tu viaje?</td></tr><tr><td class=\"speak-cell\">B</td><td class=\"speak-cell\">It was very good.</td><td class=\"speak-cell\">Fue muy bueno.</td></tr><tr><td class=\"speak-cell\">A</td><td class=\"speak-cell\">Where did you go?</td><td class=\"speak-cell\">¿A dónde fuiste?</td></tr><tr><td class=\"speak-cell\">B</td><td class=\"speak-cell\">I went to Santiago for a conference.</td><td class=\"speak-cell\">Fui a Santiago por una conferencia.</td></tr><tr><td class=\"speak-cell\">A</td><td class=\"speak-cell\">Did you meet new contacts?</td><td class=\"speak-cell\">¿Conociste nuevos contactos?</td></tr><tr><td class=\"speak-cell\">B</td><td class=\"speak-cell\">Yes, I did. I met two suppliers.</td><td class=\"speak-cell\">Sí. Conocí a dos proveedores.</td></tr></table></div><h3>Arranging a meeting by email</h3><p>Practicar una reunión por email.</p><div class=\"table-wrap\"><table><tr><th>Speaker</th><th>English</th><th>Español</th></tr><tr><td class=\"speak-cell\">A</td><td class=\"speak-cell\">Are you free on Tuesday morning?</td><td class=\"speak-cell\">¿Estás libre el martes por la mañana?</td></tr><tr><td class=\"speak-cell\">B</td><td class=\"speak-cell\">Yes, I am. What time is good for you?</td><td class=\"speak-cell\">Sí. ¿Qué horario te queda bien?</td></tr><tr><td class=\"speak-cell\">A</td><td class=\"speak-cell\">Can we meet at ten?</td><td class=\"speak-cell\">¿Podemos reunirnos a las diez?</td></tr><tr><td class=\"speak-cell\">B</td><td class=\"speak-cell\">Yes, that is fine.</td><td class=\"speak-cell\">Sí, está bien.</td></tr><tr><td class=\"speak-cell\">A</td><td class=\"speak-cell\">Great. I will send you a confirmation email.</td><td class=\"speak-cell\">Genial. Te enviaré un email de confirmación.</td></tr></table></div>"
+      },
+      {
+        "id": "reading-audio",
+        "title": "LECTURA DEL LIBRO Y FRASES DEL AUDIO SCRIPT",
+        "html": "<div class=\"annex-block\"><h2>LECTURA DEL LIBRO Y FRASES DEL AUDIO SCRIPT</h2><p>Lectura guiada basada en el tema del módulo 1 (Contacts).</p><h3>Historia / lectura: A trip and new contacts</h3><p>Last month, Sofia travelled to Buenos Aires for a business conference. She went by plane and arrived on Monday morning. The hotel was near the conference centre, so she walked to the first meeting.</p><p>At the conference, she met customers, suppliers, and colleagues from different countries. She exchanged business cards and added new people to her professional network.</p><p>After the trip, Sofia wrote two emails. In the first email, she thanked a supplier for the meeting. In the second email, she arranged a new online meeting for the following week.</p><h3>Cómo usar la lectura</h3><ul class=\"content-list\"><li>Leé una vez en silencio.</li><li>Escuchá frases tocando el texto en inglés.</li><li>Repetí en voz alta.</li><li>Intentá contar la misma historia con tus propias palabras.</li></ul></div>"
+      },
+      {
+        "id": "story-reading",
+        "title": "ANEXO FINAL: HISTORIA PARA LEER",
+        "html": "<div class=\"annex-block read-story\"><h2>ANEXO FINAL: HISTORIA PARA LEER</h2><p>Lectura creada para practicar el vocabulario y la gramática del Módulo 1 de Inglés II.</p><h3>Story for reading: A trip and new contacts</h3><p>Last month, Sofia travelled to Buenos Aires for a business conference. She went by plane and arrived on Monday morning. The hotel was near the conference centre, so she walked to the first meeting.</p><p>At the conference, she met customers, suppliers, and colleagues from different countries. She exchanged business cards and added new people to her professional network.</p><p>After the trip, Sofia wrote two emails. In the first email, she thanked a supplier for the meeting. In the second email, she arranged a new online meeting for the following week.</p></div>"
+      },
+      {
+        "id": "exercises",
+        "title": "6. Ejercicios para repasar",
+        "html": "<h2>6. Ejercicios para repasar</h2><h3>Ejercicio 1 - Past Simple</h3><ol><li>I ____ to a conference yesterday. (go)</li><li>She ____ a supplier last week. (meet)</li><li>We ____ an email two days ago. (send)</li><li>They ____ the customer in 2023. (visit)</li><li>He ____ a ticket online. (book)</li></ol><details><summary>Ver respuestas</summary><ol><li>went</li><li>met</li><li>sent</li><li>visited</li><li>booked</li></ol></details><h3>Ejercicio 2 - Questions with did</h3><ol><li>you / travel / last month?</li><li>she / meet / new contacts?</li><li>they / write / an email?</li><li>he / go / to Chile?</li></ol><details><summary>Ver respuestas</summary><ol><li>Did you travel last month?</li><li>Did she meet new contacts?</li><li>Did they write an email?</li><li>Did he go to Chile?</li></ol></details><h3>Ejercicio 3 - Time expressions</h3><ol><li>Traduce: ayer</li><li>Traduce: la semana pasada</li><li>Traduce: hace dos días</li><li>Traduce: el mes pasado</li></ol><details><summary>Ver respuestas</summary><ol><li>yesterday</li><li>last week</li><li>two days ago</li><li>last month</li></ol></details>"
+      },
+      {
+        "id": "production",
+        "title": "7. Producción oral y escrita",
+        "html": "<h2>7. Producción oral y escrita</h2><h3>Producción oral de 30 segundos</h3><p>Last month, I travelled to a business conference. I met new contacts and exchanged information. After the trip, I wrote an email to arrange a new meeting.</p><h3>Producción escrita modelo</h3><p>Dear Ana, I hope you are well. I travelled to Santiago last week and met two new suppliers. Would you like to meet next Tuesday to discuss the information? Best regards, Luis.</p>"
+      },
+      {
+        "id": "checklist",
+        "title": "8. Checklist y orden de estudio",
+        "html": "<h2>8. Checklist y orden de estudio</h2><div class=\"table-wrap\"><table><tr><th>Tema</th><th>Check</th></tr><tr><td class=\"speak-cell\">Hablar de redes sociales y contactos profesionales</td><td class=\"speak-cell\">[ ]</td></tr><tr><td class=\"speak-cell\">Hablar de hechos pasados</td><td class=\"speak-cell\">[ ]</td></tr><tr><td class=\"speak-cell\">Describir un viaje</td><td class=\"speak-cell\">[ ]</td></tr><tr><td class=\"speak-cell\">Usar Past Simple con verbos regulares e irregulares</td><td class=\"speak-cell\">[ ]</td></tr><tr><td class=\"speak-cell\">Escribir emails breves para arreglar una reunión</td><td class=\"speak-cell\">[ ]</td></tr></table></div><h3>Orden ideal para repasar</h3><div class=\"table-wrap\"><table><tr><th>Día</th><th>Contenido</th></tr><tr><td class=\"speak-cell\">Día 1</td><td class=\"speak-cell\">Vocabulario de redes sociales, contactos y viajes.</td></tr><tr><td class=\"speak-cell\">Día 2</td><td class=\"speak-cell\">Past Simple regular e irregular.</td></tr><tr><td class=\"speak-cell\">Día 3</td><td class=\"speak-cell\">Preguntas y negativos con did / didn&#x27;t.</td></tr><tr><td class=\"speak-cell\">Día 4</td><td class=\"speak-cell\">Describir un viaje.</td></tr><tr><td class=\"speak-cell\">Día 5</td><td class=\"speak-cell\">Emails para arreglar una reunión.</td></tr><tr><td class=\"speak-cell\">Día 6</td><td class=\"speak-cell\">Diálogos y lectura en voz alta.</td></tr><tr><td class=\"speak-cell\">Día 7</td><td class=\"speak-cell\">Simulacro escrito y oral.</td></tr></table></div>"
+      }
+    ],
+    "vocab": [
+      {
+        "term": "contact",
+        "translation": "contacto",
+        "example": "I have many business contacts."
+      },
+      {
+        "term": "profile",
+        "translation": "perfil",
+        "example": "Update your online profile."
+      },
+      {
+        "term": "network",
+        "translation": "red",
+        "example": "LinkedIn is a professional network."
+      },
+      {
+        "term": "website",
+        "translation": "sitio web",
+        "example": "The company has a new website."
+      },
+      {
+        "term": "message",
+        "translation": "mensaje",
+        "example": "Send me a message."
+      },
+      {
+        "term": "colleague",
+        "translation": "colega",
+        "example": "I met a colleague yesterday."
+      },
+      {
+        "term": "customer",
+        "translation": "cliente",
+        "example": "We contacted a customer."
+      },
+      {
+        "term": "supplier",
+        "translation": "proveedor",
+        "example": "The supplier called this morning."
+      },
+      {
+        "term": "trip",
+        "translation": "viaje",
+        "example": "How was your trip?"
+      },
+      {
+        "term": "flight",
+        "translation": "vuelo",
+        "example": "The flight was late."
+      },
+      {
+        "term": "hotel",
+        "translation": "hotel",
+        "example": "The hotel was near the office."
+      },
+      {
+        "term": "conference",
+        "translation": "conferencia",
+        "example": "I went to a conference."
+      },
+      {
+        "term": "meeting",
+        "translation": "reunión",
+        "example": "We had a meeting in Madrid."
+      },
+      {
+        "term": "airport",
+        "translation": "aeropuerto",
+        "example": "I arrived at the airport at nine."
+      },
+      {
+        "term": "ticket",
+        "translation": "pasaje / ticket",
+        "example": "I booked the ticket online."
+      },
+      {
+        "term": "schedule",
+        "translation": "cronograma",
+        "example": "The schedule was very busy."
+      },
+      {
+        "term": "yesterday",
+        "translation": "ayer",
+        "example": "I called yesterday."
+      },
+      {
+        "term": "last week",
+        "translation": "la semana pasada",
+        "example": "We met last week."
+      },
+      {
+        "term": "last month",
+        "translation": "el mes pasado",
+        "example": "She travelled last month."
+      },
+      {
+        "term": "two days ago",
+        "translation": "hace dos días",
+        "example": "I sent the email two days ago."
+      },
+      {
+        "term": "in 2023",
+        "translation": "en 2023",
+        "example": "I started the course in 2023."
+      },
+      {
+        "term": "this morning",
+        "translation": "esta mañana",
+        "example": "He arrived this morning."
+      }
+    ],
+    "quiz": [
+      {
+        "question": "I ____ to a conference yesterday. (go)",
+        "options": [
+          "went",
+          "wrong answer",
+          "another option",
+          "not sure"
+        ],
+        "answer": "went"
+      },
+      {
+        "question": "you / travel / last month?",
+        "options": [
+          "Did you travel last month?",
+          "wrong answer",
+          "another option",
+          "not sure"
+        ],
+        "answer": "Did you travel last month?"
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "moduleNo": 2,
+    "course": "Inglés II",
+    "label": "Inglés II - Módulo 2",
+    "title": "Departments",
+    "spanishTitle": "Departamentos",
+    "color": "#f97316",
+    "goals": [
+      "Describir departamentos y responsabilidades",
+      "Dar indicaciones dentro y fuera de una empresa",
+      "Usar preposiciones de lugar y movimiento",
+      "Usar demostrativos this/that/these/those",
+      "Dejar y tomar mensajes telefónicos"
+    ],
+    "sections": [
+      {
+        "id": "intro",
+        "title": "Introducción",
+        "html": "<p class=\"lead\">INGLÉS II - MÓDULO 2</p><p class=\"lead\">Departments / Departamentos</p><p>Resumen completo con vocabulario, gramática, frases, diálogos y ejercicios de repaso.</p><div class=\"table-wrap\"><table><tr><th>Objetivo: volver a aprender el contenido del módulo 2: describir departamentos y responsabilidades, dar indicaciones dentro y fuera de una empresa, usar preposiciones de lugar y movimiento, usar demostrativos this/that/these/those, dejar y tomar mensajes telefónicos.</th></tr></table></div>"
+      },
+      {
+        "id": "goals",
+        "title": "1. Qué tenés que saber al terminar este módulo",
+        "html": "<h2>1. Qué tenés que saber al terminar este módulo</h2><ul class=\"content-list\"><li>Describir departamentos y responsabilidades</li><li>Dar indicaciones dentro y fuera de una empresa</li><li>Usar preposiciones de lugar y movimiento</li><li>Usar demostrativos this/that/these/those</li><li>Dejar y tomar mensajes telefónicos</li></ul>"
+      },
+      {
+        "id": "vocab",
+        "title": "2. Vocabulario principal",
+        "html": "<h2>2. Vocabulario principal</h2><h3>Company departments / Departamentos</h3><div class=\"table-wrap\"><table><tr><th>English</th><th>Español</th><th>Ejemplo</th></tr><tr><td class=\"speak-cell\">Sales</td><td class=\"speak-cell\">Ventas</td><td class=\"speak-cell\">Sales talks to customers.</td></tr><tr><td class=\"speak-cell\">Marketing</td><td class=\"speak-cell\">Marketing</td><td class=\"speak-cell\">Marketing promotes products.</td></tr><tr><td class=\"speak-cell\">Finance</td><td class=\"speak-cell\">Finanzas</td><td class=\"speak-cell\">Finance pays invoices.</td></tr><tr><td class=\"speak-cell\">Human Resources</td><td class=\"speak-cell\">Recursos Humanos</td><td class=\"speak-cell\">HR hires staff.</td></tr><tr><td class=\"speak-cell\">IT</td><td class=\"speak-cell\">Sistemas / Informática</td><td class=\"speak-cell\">IT fixes computers.</td></tr><tr><td class=\"speak-cell\">Production</td><td class=\"speak-cell\">Producción</td><td class=\"speak-cell\">Production makes products.</td></tr><tr><td class=\"speak-cell\">Purchasing</td><td class=\"speak-cell\">Compras</td><td class=\"speak-cell\">Purchasing buys materials.</td></tr><tr><td class=\"speak-cell\">Customer Service</td><td class=\"speak-cell\">Atención al cliente</td><td class=\"speak-cell\">Customer Service helps customers.</td></tr><tr><td class=\"speak-cell\">Research and Development</td><td class=\"speak-cell\">Investigación y desarrollo</td><td class=\"speak-cell\">R&amp;D develops new products.</td></tr><tr><td class=\"speak-cell\">Reception</td><td class=\"speak-cell\">Recepción</td><td class=\"speak-cell\">Reception receives visitors.</td></tr></table></div><h3>Places in a company / Lugares</h3><div class=\"table-wrap\"><table><tr><th>English</th><th>Español</th><th>Ejemplo</th></tr><tr><td class=\"speak-cell\">head office</td><td class=\"speak-cell\">oficina central</td><td class=\"speak-cell\">The head office is in Mendoza.</td></tr><tr><td class=\"speak-cell\">factory</td><td class=\"speak-cell\">fábrica</td><td class=\"speak-cell\">The factory is outside the city.</td></tr><tr><td class=\"speak-cell\">warehouse</td><td class=\"speak-cell\">depósito</td><td class=\"speak-cell\">Products are in the warehouse.</td></tr><tr><td class=\"speak-cell\">meeting room</td><td class=\"speak-cell\">sala de reuniones</td><td class=\"speak-cell\">The meeting room is on the second floor.</td></tr><tr><td class=\"speak-cell\">corridor</td><td class=\"speak-cell\">pasillo</td><td class=\"speak-cell\">Go along the corridor.</td></tr><tr><td class=\"speak-cell\">lift / elevator</td><td class=\"speak-cell\">ascensor</td><td class=\"speak-cell\">Take the lift to the third floor.</td></tr><tr><td class=\"speak-cell\">entrance</td><td class=\"speak-cell\">entrada</td><td class=\"speak-cell\">Reception is near the entrance.</td></tr></table></div><h3>Directions / Indicaciones</h3><div class=\"table-wrap\"><table><tr><th>English</th><th>Español</th><th>Ejemplo</th></tr><tr><td class=\"speak-cell\">go straight on</td><td class=\"speak-cell\">seguir derecho</td><td class=\"speak-cell\">Go straight on to Reception.</td></tr><tr><td class=\"speak-cell\">turn left</td><td class=\"speak-cell\">doblar a la izquierda</td><td class=\"speak-cell\">Turn left after the lift.</td></tr><tr><td class=\"speak-cell\">turn right</td><td class=\"speak-cell\">doblar a la derecha</td><td class=\"speak-cell\">Turn right at the corridor.</td></tr><tr><td class=\"speak-cell\">next to</td><td class=\"speak-cell\">al lado de</td><td class=\"speak-cell\">Finance is next to Sales.</td></tr><tr><td class=\"speak-cell\">opposite</td><td class=\"speak-cell\">frente a</td><td class=\"speak-cell\">The meeting room is opposite IT.</td></tr><tr><td class=\"speak-cell\">between</td><td class=\"speak-cell\">entre</td><td class=\"speak-cell\">HR is between Finance and Sales.</td></tr></table></div>"
+      },
+      {
+        "id": "grammar",
+        "title": "3. Gramática del módulo",
+        "html": "<h2>3. Gramática del módulo</h2><h3>Prepositions of place</h3><p>Usamos in, on, under, next to, opposite, between, near, behind e in front of para decir dónde está algo.</p><div class=\"table-wrap\"><table><tr><th>English</th><th>Español</th></tr><tr><td class=\"speak-cell\">The meeting room is next to Reception.</td><td class=\"speak-cell\">La sala de reuniones está al lado de Recepción.</td></tr><tr><td class=\"speak-cell\">Finance is on the second floor.</td><td class=\"speak-cell\">Finanzas está en el segundo piso.</td></tr></table></div><h3>Prepositions of movement</h3><p>Usamos to, into, out of, across, through, along, past, up y down para indicar movimiento.</p><div class=\"table-wrap\"><table><tr><th>English</th><th>Español</th></tr><tr><td class=\"speak-cell\">Go along the corridor.</td><td class=\"speak-cell\">Seguí por el pasillo.</td></tr><tr><td class=\"speak-cell\">Go past the lift and turn right.</td><td class=\"speak-cell\">Pasá el ascensor y doblá a la derecha.</td></tr></table></div><h3>Imperative</h3><p>El imperativo usa el verbo base para dar instrucciones: go, turn, take, call, send. Para negativo usamos don&#x27;t.</p><div class=\"table-wrap\"><table><tr><th>English</th><th>Español</th></tr><tr><td class=\"speak-cell\">Take the lift.</td><td class=\"speak-cell\">Tomá el ascensor.</td></tr><tr><td class=\"speak-cell\">Don&#x27;t enter this office.</td><td class=\"speak-cell\">No entres a esta oficina.</td></tr></table></div><h3>Demonstratives</h3><p>This/these para algo cercano; that/those para algo más lejano.</p><div class=\"table-wrap\"><table><tr><th>English</th><th>Español</th></tr><tr><td class=\"speak-cell\">This is the Sales department.</td><td class=\"speak-cell\">Este es el departamento de Ventas.</td></tr><tr><td class=\"speak-cell\">Those offices are for managers.</td><td class=\"speak-cell\">Aquellas oficinas son para gerentes.</td></tr></table></div>"
+      },
+      {
+        "id": "phrases",
+        "title": "4. Frases base del módulo",
+        "html": "<h2>4. Frases base del módulo</h2><div class=\"table-wrap\"><table><tr><th>English</th><th>Uso / Español</th></tr><tr><td class=\"speak-cell\">Where is the Finance department?</td><td class=\"speak-cell\">Preguntar dónde está un departamento.</td></tr><tr><td class=\"speak-cell\">It is next to Reception.</td><td class=\"speak-cell\">Indicar ubicación.</td></tr><tr><td class=\"speak-cell\">Go straight on and turn left.</td><td class=\"speak-cell\">Dar indicaciones.</td></tr><tr><td class=\"speak-cell\">Take the lift to the third floor.</td><td class=\"speak-cell\">Indicar movimiento dentro de un edificio.</td></tr><tr><td class=\"speak-cell\">Can I take a message?</td><td class=\"speak-cell\">Ofrecer tomar un mensaje.</td></tr><tr><td class=\"speak-cell\">Could I leave a message?</td><td class=\"speak-cell\">Pedir dejar un mensaje.</td></tr><tr><td class=\"speak-cell\">So that is 702 555 0184. Is that right?</td><td class=\"speak-cell\">Confirmar información.</td></tr></table></div>"
+      },
+      {
+        "id": "key-expressions",
+        "title": "KEY EXPRESSIONS / FRASES CLAVE DEL LIBRO",
+        "html": "<div class=\"annex-block\"><h2>KEY EXPRESSIONS / FRASES CLAVE DEL LIBRO</h2><p>Frases clave del módulo para practicar en voz alta. Tocá cualquier frase en inglés para escucharla.</p><div class=\"table-wrap\"><table><tr><th>Función</th><th>Key expression</th><th>Español / uso</th></tr><tr><td class=\"speak-cell\">Asking location</td><td class=\"speak-cell\">Where is the Finance department?</td><td class=\"speak-cell\">Preguntar dónde está un departamento.</td></tr><tr><td class=\"speak-cell\">Giving location</td><td class=\"speak-cell\">It is next to Reception.</td><td class=\"speak-cell\">Indicar ubicación.</td></tr><tr><td class=\"speak-cell\">Directions</td><td class=\"speak-cell\">Go straight on and turn left.</td><td class=\"speak-cell\">Dar indicaciones.</td></tr><tr><td class=\"speak-cell\">Movement</td><td class=\"speak-cell\">Take the lift to the third floor.</td><td class=\"speak-cell\">Indicar movimiento dentro de un edificio.</td></tr><tr><td class=\"speak-cell\">Phone message</td><td class=\"speak-cell\">Can I take a message?</td><td class=\"speak-cell\">Ofrecer tomar un mensaje.</td></tr><tr><td class=\"speak-cell\">Leaving a message</td><td class=\"speak-cell\">Could I leave a message?</td><td class=\"speak-cell\">Pedir dejar un mensaje.</td></tr><tr><td class=\"speak-cell\">Checking details</td><td class=\"speak-cell\">So that is 702 555 0184. Is that right?</td><td class=\"speak-cell\">Confirmar información.</td></tr></table></div></div>"
+      },
+      {
+        "id": "dialogues",
+        "title": "5. Diálogos del módulo",
+        "html": "<h2>5. Diálogos del módulo</h2><h3>Finding a department</h3><p>Practicar indicaciones dentro de una empresa.</p><div class=\"table-wrap\"><table><tr><th>Speaker</th><th>English</th><th>Español</th></tr><tr><td class=\"speak-cell\">A</td><td class=\"speak-cell\">Excuse me. Where is the Finance department?</td><td class=\"speak-cell\">Disculpe. ¿Dónde está el departamento de Finanzas?</td></tr><tr><td class=\"speak-cell\">B</td><td class=\"speak-cell\">It is on the second floor.</td><td class=\"speak-cell\">Está en el segundo piso.</td></tr><tr><td class=\"speak-cell\">A</td><td class=\"speak-cell\">How do I get there?</td><td class=\"speak-cell\">¿Cómo llego allí?</td></tr><tr><td class=\"speak-cell\">B</td><td class=\"speak-cell\">Take the lift, go straight on, and turn left.</td><td class=\"speak-cell\">Tomá el ascensor, seguí derecho y doblá a la izquierda.</td></tr><tr><td class=\"speak-cell\">A</td><td class=\"speak-cell\">Is it next to Human Resources?</td><td class=\"speak-cell\">¿Está al lado de Recursos Humanos?</td></tr><tr><td class=\"speak-cell\">B</td><td class=\"speak-cell\">Yes, it is opposite the meeting room.</td><td class=\"speak-cell\">Sí, está frente a la sala de reuniones.</td></tr></table></div><h3>Taking a message</h3><p>Practicar mensajes telefónicos.</p><div class=\"table-wrap\"><table><tr><th>Speaker</th><th>English</th><th>Español</th></tr><tr><td class=\"speak-cell\">A</td><td class=\"speak-cell\">Could I speak to Mr. Green, please?</td><td class=\"speak-cell\">¿Podría hablar con el Sr. Green, por favor?</td></tr><tr><td class=\"speak-cell\">B</td><td class=\"speak-cell\">I am sorry, but he is not available. Can I take a message?</td><td class=\"speak-cell\">Lo siento, no está disponible. ¿Puedo tomar un mensaje?</td></tr><tr><td class=\"speak-cell\">A</td><td class=\"speak-cell\">Yes. Please ask him to call me back.</td><td class=\"speak-cell\">Sí. Por favor dígale que me devuelva la llamada.</td></tr><tr><td class=\"speak-cell\">B</td><td class=\"speak-cell\">Can I have your phone number?</td><td class=\"speak-cell\">¿Me da su número de teléfono?</td></tr><tr><td class=\"speak-cell\">A</td><td class=\"speak-cell\">Yes. It is 702 555 0148.</td><td class=\"speak-cell\">Sí. Es 702 555 0148.</td></tr><tr><td class=\"speak-cell\">B</td><td class=\"speak-cell\">So that is 702 555 0148. Is that right?</td><td class=\"speak-cell\">Entonces es 702 555 0148. ¿Es correcto?</td></tr></table></div>"
+      },
+      {
+        "id": "reading-audio",
+        "title": "LECTURA DEL LIBRO Y FRASES DEL AUDIO SCRIPT",
+        "html": "<div class=\"annex-block\"><h2>LECTURA DEL LIBRO Y FRASES DEL AUDIO SCRIPT</h2><p>Lectura guiada basada en el tema del módulo 2 (Departments).</p><h3>Historia / lectura: A new office building</h3><p>Pfizer opened a new office building with different departments on each floor. Reception is near the entrance, Sales is on the first floor, and Finance is next to Human Resources.</p><p>Visitors need clear directions. When they arrive, the receptionist says: Go straight on, take the lift to the second floor, and turn right. The meeting room is opposite the IT office.</p><p>People in the building use short phone messages every day. If a manager is not available, an assistant takes a message and checks the details carefully.</p><h3>Cómo usar la lectura</h3><ul class=\"content-list\"><li>Leé una vez en silencio.</li><li>Escuchá frases tocando el texto en inglés.</li><li>Repetí en voz alta.</li><li>Intentá contar la misma historia con tus propias palabras.</li></ul></div>"
+      },
+      {
+        "id": "story-reading",
+        "title": "ANEXO FINAL: HISTORIA PARA LEER",
+        "html": "<div class=\"annex-block read-story\"><h2>ANEXO FINAL: HISTORIA PARA LEER</h2><p>Lectura creada para practicar el vocabulario y la gramática del Módulo 2 de Inglés II.</p><h3>Story for reading: A new office building</h3><p>Pfizer opened a new office building with different departments on each floor. Reception is near the entrance, Sales is on the first floor, and Finance is next to Human Resources.</p><p>Visitors need clear directions. When they arrive, the receptionist says: Go straight on, take the lift to the second floor, and turn right. The meeting room is opposite the IT office.</p><p>People in the building use short phone messages every day. If a manager is not available, an assistant takes a message and checks the details carefully.</p></div>"
+      },
+      {
+        "id": "exercises",
+        "title": "6. Ejercicios para repasar",
+        "html": "<h2>6. Ejercicios para repasar</h2><h3>Ejercicio 1 - Departments</h3><ol><li>____ pays invoices.</li><li>____ helps customers.</li><li>____ fixes computers.</li><li>____ buys materials.</li><li>____ promotes products.</li></ol><details><summary>Ver respuestas</summary><ol><li>Finance</li><li>Customer Service</li><li>IT</li><li>Purchasing</li><li>Marketing</li></ol></details><h3>Ejercicio 2 - Directions</h3><ol><li>Complete: Go straight ____.</li><li>Complete: Turn ____ after Reception.</li><li>Complete: Take the ____ to the third floor.</li><li>Complete: Finance is next ____ Sales.</li></ol><details><summary>Ver respuestas</summary><ol><li>on</li><li>left / right</li><li>lift / elevator</li><li>to</li></ol></details><h3>Ejercicio 3 - Imperative</h3><ol><li>Transforma: You go to Reception.</li><li>Transforma: You do not enter this office.</li><li>Transforma: You call Mr. Green.</li></ol><details><summary>Ver respuestas</summary><ol><li>Go to Reception.</li><li>Don&#x27;t enter this office.</li><li>Call Mr. Green.</li></ol></details>"
+      },
+      {
+        "id": "production",
+        "title": "7. Producción oral y escrita",
+        "html": "<h2>7. Producción oral y escrita</h2><h3>Producción oral de 30 segundos</h3><p>My company has different departments. Sales talks to customers, Finance pays invoices, and IT fixes computers. Reception is near the entrance, and the meeting room is on the second floor.</p><h3>Producción escrita modelo</h3><p>The Finance department is on the second floor. To get there, go straight on, take the lift, and turn left. It is next to Human Resources and opposite the meeting room.</p>"
+      },
+      {
+        "id": "checklist",
+        "title": "8. Checklist y orden de estudio",
+        "html": "<h2>8. Checklist y orden de estudio</h2><div class=\"table-wrap\"><table><tr><th>Tema</th><th>Check</th></tr><tr><td class=\"speak-cell\">Describir departamentos y responsabilidades</td><td class=\"speak-cell\">[ ]</td></tr><tr><td class=\"speak-cell\">Dar indicaciones dentro y fuera de una empresa</td><td class=\"speak-cell\">[ ]</td></tr><tr><td class=\"speak-cell\">Usar preposiciones de lugar y movimiento</td><td class=\"speak-cell\">[ ]</td></tr><tr><td class=\"speak-cell\">Usar demostrativos this/that/these/those</td><td class=\"speak-cell\">[ ]</td></tr><tr><td class=\"speak-cell\">Dejar y tomar mensajes telefónicos</td><td class=\"speak-cell\">[ ]</td></tr></table></div><h3>Orden ideal para repasar</h3><div class=\"table-wrap\"><table><tr><th>Día</th><th>Contenido</th></tr><tr><td class=\"speak-cell\">Día 1</td><td class=\"speak-cell\">Departamentos y responsabilidades.</td></tr><tr><td class=\"speak-cell\">Día 2</td><td class=\"speak-cell\">Preposiciones de lugar.</td></tr><tr><td class=\"speak-cell\">Día 3</td><td class=\"speak-cell\">Preposiciones de movimiento e imperativos.</td></tr><tr><td class=\"speak-cell\">Día 4</td><td class=\"speak-cell\">Demostrativos this/that/these/those.</td></tr><tr><td class=\"speak-cell\">Día 5</td><td class=\"speak-cell\">Indicaciones y mensajes telefónicos.</td></tr><tr><td class=\"speak-cell\">Día 6</td><td class=\"speak-cell\">Diálogos y lectura.</td></tr><tr><td class=\"speak-cell\">Día 7</td><td class=\"speak-cell\">Simulacro.</td></tr></table></div>"
+      }
+    ],
+    "vocab": [
+      {
+        "term": "Sales",
+        "translation": "Ventas",
+        "example": "Sales talks to customers."
+      },
+      {
+        "term": "Marketing",
+        "translation": "Marketing",
+        "example": "Marketing promotes products."
+      },
+      {
+        "term": "Finance",
+        "translation": "Finanzas",
+        "example": "Finance pays invoices."
+      },
+      {
+        "term": "Human Resources",
+        "translation": "Recursos Humanos",
+        "example": "HR hires staff."
+      },
+      {
+        "term": "IT",
+        "translation": "Sistemas / Informática",
+        "example": "IT fixes computers."
+      },
+      {
+        "term": "Production",
+        "translation": "Producción",
+        "example": "Production makes products."
+      },
+      {
+        "term": "Purchasing",
+        "translation": "Compras",
+        "example": "Purchasing buys materials."
+      },
+      {
+        "term": "Customer Service",
+        "translation": "Atención al cliente",
+        "example": "Customer Service helps customers."
+      },
+      {
+        "term": "Research and Development",
+        "translation": "Investigación y desarrollo",
+        "example": "R&D develops new products."
+      },
+      {
+        "term": "Reception",
+        "translation": "Recepción",
+        "example": "Reception receives visitors."
+      },
+      {
+        "term": "head office",
+        "translation": "oficina central",
+        "example": "The head office is in Mendoza."
+      },
+      {
+        "term": "factory",
+        "translation": "fábrica",
+        "example": "The factory is outside the city."
+      },
+      {
+        "term": "warehouse",
+        "translation": "depósito",
+        "example": "Products are in the warehouse."
+      },
+      {
+        "term": "meeting room",
+        "translation": "sala de reuniones",
+        "example": "The meeting room is on the second floor."
+      },
+      {
+        "term": "corridor",
+        "translation": "pasillo",
+        "example": "Go along the corridor."
+      },
+      {
+        "term": "lift / elevator",
+        "translation": "ascensor",
+        "example": "Take the lift to the third floor."
+      },
+      {
+        "term": "entrance",
+        "translation": "entrada",
+        "example": "Reception is near the entrance."
+      },
+      {
+        "term": "go straight on",
+        "translation": "seguir derecho",
+        "example": "Go straight on to Reception."
+      },
+      {
+        "term": "turn left",
+        "translation": "doblar a la izquierda",
+        "example": "Turn left after the lift."
+      },
+      {
+        "term": "turn right",
+        "translation": "doblar a la derecha",
+        "example": "Turn right at the corridor."
+      },
+      {
+        "term": "next to",
+        "translation": "al lado de",
+        "example": "Finance is next to Sales."
+      },
+      {
+        "term": "opposite",
+        "translation": "frente a",
+        "example": "The meeting room is opposite IT."
+      },
+      {
+        "term": "between",
+        "translation": "entre",
+        "example": "HR is between Finance and Sales."
+      }
+    ],
+    "quiz": [
+      {
+        "question": "____ pays invoices.",
+        "options": [
+          "Finance",
+          "wrong answer",
+          "another option",
+          "not sure"
+        ],
+        "answer": "Finance"
+      },
+      {
+        "question": "Complete: Go straight ____.",
+        "options": [
+          "on",
+          "wrong answer",
+          "another option",
+          "not sure"
+        ],
+        "answer": "on"
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "moduleNo": 3,
+    "course": "Inglés II",
+    "label": "Inglés II - Módulo 3",
+    "title": "Employment",
+    "spanishTitle": "Empleos",
+    "color": "#16a34a",
+    "goals": [
+      "Hablar de habilidades y experiencia profesional",
+      "Describir actividades en desarrollo",
+      "Usar Present Continuous",
+      "Decir la hora",
+      "Acordar una cita telefónicamente"
+    ],
+    "sections": [
+      {
+        "id": "intro",
+        "title": "Introducción",
+        "html": "<p class=\"lead\">INGLÉS II - MÓDULO 3</p><p class=\"lead\">Employment / Empleos</p><p>Resumen completo con vocabulario, gramática, frases, diálogos y ejercicios de repaso.</p><div class=\"table-wrap\"><table><tr><th>Objetivo: volver a aprender el contenido del módulo 3: hablar de habilidades y experiencia profesional, describir actividades en desarrollo, usar present continuous, decir la hora, acordar una cita telefónicamente.</th></tr></table></div>"
+      },
+      {
+        "id": "goals",
+        "title": "1. Qué tenés que saber al terminar este módulo",
+        "html": "<h2>1. Qué tenés que saber al terminar este módulo</h2><ul class=\"content-list\"><li>Hablar de habilidades y experiencia profesional</li><li>Describir actividades en desarrollo</li><li>Usar Present Continuous</li><li>Decir la hora</li><li>Acordar una cita telefónicamente</li></ul>"
+      },
+      {
+        "id": "vocab",
+        "title": "2. Vocabulario principal",
+        "html": "<h2>2. Vocabulario principal</h2><h3>Employment / Empleo</h3><div class=\"table-wrap\"><table><tr><th>English</th><th>Español</th><th>Ejemplo</th></tr><tr><td class=\"speak-cell\">job</td><td class=\"speak-cell\">empleo</td><td class=\"speak-cell\">I am looking for a job.</td></tr><tr><td class=\"speak-cell\">position</td><td class=\"speak-cell\">puesto</td><td class=\"speak-cell\">This position is in Marketing.</td></tr><tr><td class=\"speak-cell\">candidate</td><td class=\"speak-cell\">candidato</td><td class=\"speak-cell\">The candidate has experience.</td></tr><tr><td class=\"speak-cell\">interview</td><td class=\"speak-cell\">entrevista</td><td class=\"speak-cell\">The interview is at nine.</td></tr><tr><td class=\"speak-cell\">CV / résumé</td><td class=\"speak-cell\">currículum</td><td class=\"speak-cell\">Send your CV by email.</td></tr><tr><td class=\"speak-cell\">qualification</td><td class=\"speak-cell\">título / calificación</td><td class=\"speak-cell\">She has a business qualification.</td></tr><tr><td class=\"speak-cell\">experience</td><td class=\"speak-cell\">experiencia</td><td class=\"speak-cell\">He has sales experience.</td></tr><tr><td class=\"speak-cell\">skill</td><td class=\"speak-cell\">habilidad</td><td class=\"speak-cell\">Communication is an important skill.</td></tr></table></div><h3>Professional adjectives / Adjetivos profesionales</h3><div class=\"table-wrap\"><table><tr><th>English</th><th>Español</th><th>Ejemplo</th></tr><tr><td class=\"speak-cell\">responsible</td><td class=\"speak-cell\">responsable</td><td class=\"speak-cell\">She is responsible and organized.</td></tr><tr><td class=\"speak-cell\">organized</td><td class=\"speak-cell\">organizado/a</td><td class=\"speak-cell\">An assistant needs to be organized.</td></tr><tr><td class=\"speak-cell\">creative</td><td class=\"speak-cell\">creativo/a</td><td class=\"speak-cell\">Marketing needs creative people.</td></tr><tr><td class=\"speak-cell\">flexible</td><td class=\"speak-cell\">flexible</td><td class=\"speak-cell\">Flexible people adapt quickly.</td></tr><tr><td class=\"speak-cell\">reliable</td><td class=\"speak-cell\">confiable</td><td class=\"speak-cell\">A reliable employee arrives on time.</td></tr><tr><td class=\"speak-cell\">experienced</td><td class=\"speak-cell\">experimentado/a</td><td class=\"speak-cell\">He is an experienced technician.</td></tr><tr><td class=\"speak-cell\">qualified</td><td class=\"speak-cell\">calificado/a</td><td class=\"speak-cell\">She is qualified for the job.</td></tr></table></div><h3>Time / La hora</h3><div class=\"table-wrap\"><table><tr><th>English</th><th>Español</th><th>Ejemplo</th></tr><tr><td class=\"speak-cell\">at nine o&#x27;clock</td><td class=\"speak-cell\">a las nueve en punto</td><td class=\"speak-cell\">The meeting is at nine o&#x27;clock.</td></tr><tr><td class=\"speak-cell\">quarter past ten</td><td class=\"speak-cell\">diez y cuarto</td><td class=\"speak-cell\">The interview is at quarter past ten.</td></tr><tr><td class=\"speak-cell\">half past two</td><td class=\"speak-cell\">dos y media</td><td class=\"speak-cell\">The call is at half past two.</td></tr><tr><td class=\"speak-cell\">quarter to five</td><td class=\"speak-cell\">cinco menos cuarto</td><td class=\"speak-cell\">The appointment is at quarter to five.</td></tr></table></div>"
+      },
+      {
+        "id": "grammar",
+        "title": "3. Gramática del módulo",
+        "html": "<h2>3. Gramática del módulo</h2><h3>Present Continuous - forma</h3><p>Usamos am/is/are + verbo -ing.</p><div class=\"table-wrap\"><table><tr><th>English</th><th>Español</th></tr><tr><td class=\"speak-cell\">I am working now.</td><td class=\"speak-cell\">Estoy trabajando ahora.</td></tr><tr><td class=\"speak-cell\">She is speaking to a customer.</td><td class=\"speak-cell\">Ella está hablando con un cliente.</td></tr><tr><td class=\"speak-cell\">They are interviewing candidates.</td><td class=\"speak-cell\">Ellos están entrevistando candidatos.</td></tr></table></div><h3>Uso del Present Continuous</h3><p>Se usa para acciones que están ocurriendo ahora o situaciones temporales.</p><div class=\"table-wrap\"><table><tr><th>English</th><th>Español</th></tr><tr><td class=\"speak-cell\">I am studying English this semester.</td><td class=\"speak-cell\">Estoy estudiando inglés este semestre.</td></tr><tr><td class=\"speak-cell\">We are preparing a report this week.</td><td class=\"speak-cell\">Estamos preparando un informe esta semana.</td></tr></table></div><h3>Negativo y preguntas</h3><p>Negativo: am not / isn&#x27;t / aren&#x27;t + -ing. Preguntas: Am/Is/Are + sujeto + -ing?</p><div class=\"table-wrap\"><table><tr><th>English</th><th>Español</th></tr><tr><td class=\"speak-cell\">Are you working now?</td><td class=\"speak-cell\">¿Estás trabajando ahora?</td></tr><tr><td class=\"speak-cell\">He is not attending the meeting.</td><td class=\"speak-cell\">Él no está asistiendo a la reunión.</td></tr></table></div><h3>Present Simple vs Present Continuous</h3><p>Present Simple describe rutinas; Present Continuous describe lo que ocurre ahora.</p><div class=\"table-wrap\"><table><tr><th>English</th><th>Español</th></tr><tr><td class=\"speak-cell\">I work in Sales.</td><td class=\"speak-cell\">Trabajo en Ventas.</td></tr><tr><td class=\"speak-cell\">I am working on a new project.</td><td class=\"speak-cell\">Estoy trabajando en un proyecto nuevo.</td></tr></table></div>"
+      },
+      {
+        "id": "phrases",
+        "title": "4. Frases base del módulo",
+        "html": "<h2>4. Frases base del módulo</h2><div class=\"table-wrap\"><table><tr><th>English</th><th>Uso / Español</th></tr><tr><td class=\"speak-cell\">What are you doing now?</td><td class=\"speak-cell\">Preguntar qué está haciendo alguien ahora.</td></tr><tr><td class=\"speak-cell\">I am preparing a report.</td><td class=\"speak-cell\">Responder sobre actividad actual.</td></tr><tr><td class=\"speak-cell\">Are you available at three?</td><td class=\"speak-cell\">Preguntar disponibilidad.</td></tr><tr><td class=\"speak-cell\">Can we meet at half past two?</td><td class=\"speak-cell\">Acordar una cita.</td></tr><tr><td class=\"speak-cell\">The interview is at quarter past ten.</td><td class=\"speak-cell\">Decir hora.</td></tr><tr><td class=\"speak-cell\">I am good at communication.</td><td class=\"speak-cell\">Hablar de habilidades.</td></tr><tr><td class=\"speak-cell\">I have experience in Sales.</td><td class=\"speak-cell\">Hablar de experiencia.</td></tr></table></div>"
+      },
+      {
+        "id": "key-expressions",
+        "title": "KEY EXPRESSIONS / FRASES CLAVE DEL LIBRO",
+        "html": "<div class=\"annex-block\"><h2>KEY EXPRESSIONS / FRASES CLAVE DEL LIBRO</h2><p>Frases clave del módulo para practicar en voz alta. Tocá cualquier frase en inglés para escucharla.</p><div class=\"table-wrap\"><table><tr><th>Función</th><th>Key expression</th><th>Español / uso</th></tr><tr><td class=\"speak-cell\">Current action</td><td class=\"speak-cell\">What are you doing now?</td><td class=\"speak-cell\">Preguntar qué está haciendo alguien ahora.</td></tr><tr><td class=\"speak-cell\">Answer</td><td class=\"speak-cell\">I am preparing a report.</td><td class=\"speak-cell\">Responder sobre actividad actual.</td></tr><tr><td class=\"speak-cell\">Availability</td><td class=\"speak-cell\">Are you available at three?</td><td class=\"speak-cell\">Preguntar disponibilidad.</td></tr><tr><td class=\"speak-cell\">Arranging</td><td class=\"speak-cell\">Can we meet at half past two?</td><td class=\"speak-cell\">Acordar una cita.</td></tr><tr><td class=\"speak-cell\">Time</td><td class=\"speak-cell\">The interview is at quarter past ten.</td><td class=\"speak-cell\">Decir hora.</td></tr><tr><td class=\"speak-cell\">Professional skills</td><td class=\"speak-cell\">I am good at communication.</td><td class=\"speak-cell\">Hablar de habilidades.</td></tr><tr><td class=\"speak-cell\">Experience</td><td class=\"speak-cell\">I have experience in Sales.</td><td class=\"speak-cell\">Hablar de experiencia.</td></tr></table></div></div>"
+      },
+      {
+        "id": "dialogues",
+        "title": "5. Diálogos del módulo",
+        "html": "<h2>5. Diálogos del módulo</h2><h3>Arranging an interview</h3><p>Practicar horarios y citas.</p><div class=\"table-wrap\"><table><tr><th>Speaker</th><th>English</th><th>Español</th></tr><tr><td class=\"speak-cell\">A</td><td class=\"speak-cell\">Good morning. Are you available for an interview on Monday?</td><td class=\"speak-cell\">Buenos días. ¿Está disponible para una entrevista el lunes?</td></tr><tr><td class=\"speak-cell\">B</td><td class=\"speak-cell\">Yes, I am. What time is convenient?</td><td class=\"speak-cell\">Sí. ¿Qué horario es conveniente?</td></tr><tr><td class=\"speak-cell\">A</td><td class=\"speak-cell\">Can we meet at quarter past ten?</td><td class=\"speak-cell\">¿Podemos reunirnos a las diez y cuarto?</td></tr><tr><td class=\"speak-cell\">B</td><td class=\"speak-cell\">Yes, that is fine.</td><td class=\"speak-cell\">Sí, está bien.</td></tr><tr><td class=\"speak-cell\">A</td><td class=\"speak-cell\">Please bring your CV.</td><td class=\"speak-cell\">Por favor traiga su currículum.</td></tr><tr><td class=\"speak-cell\">B</td><td class=\"speak-cell\">Of course. Thank you.</td><td class=\"speak-cell\">Por supuesto. Gracias.</td></tr></table></div><h3>At work now</h3><p>Practicar Present Continuous.</p><div class=\"table-wrap\"><table><tr><th>Speaker</th><th>English</th><th>Español</th></tr><tr><td class=\"speak-cell\">A</td><td class=\"speak-cell\">What are you doing now?</td><td class=\"speak-cell\">¿Qué estás haciendo ahora?</td></tr><tr><td class=\"speak-cell\">B</td><td class=\"speak-cell\">I am preparing a customer report.</td><td class=\"speak-cell\">Estoy preparando un informe de cliente.</td></tr><tr><td class=\"speak-cell\">A</td><td class=\"speak-cell\">Is Ana working with you?</td><td class=\"speak-cell\">¿Ana está trabajando con vos?</td></tr><tr><td class=\"speak-cell\">B</td><td class=\"speak-cell\">No, she is interviewing a candidate.</td><td class=\"speak-cell\">No, ella está entrevistando a un candidato.</td></tr><tr><td class=\"speak-cell\">A</td><td class=\"speak-cell\">Are they hiring a marketing assistant?</td><td class=\"speak-cell\">¿Están contratando un asistente de marketing?</td></tr><tr><td class=\"speak-cell\">B</td><td class=\"speak-cell\">Yes, they are.</td><td class=\"speak-cell\">Sí.</td></tr></table></div>"
+      },
+      {
+        "id": "reading-audio",
+        "title": "LECTURA DEL LIBRO Y FRASES DEL AUDIO SCRIPT",
+        "html": "<div class=\"annex-block\"><h2>LECTURA DEL LIBRO Y FRASES DEL AUDIO SCRIPT</h2><p>Lectura guiada basada en el tema del módulo 3 (Employment).</p><h3>Historia / lectura: A day of interviews</h3><p>Today the Human Resources team is interviewing two candidates. One candidate is applying for a Marketing Assistant position, and the other is applying for an Administrative Assistant position.</p><p>At nine o’clock, Laura is checking the CVs. At quarter past ten, she is speaking to the first candidate. The candidate is describing her experience in customer service and marketing.</p><p>In the afternoon, the team is arranging a second meeting. They are comparing skills, qualifications, and experience before they choose the best candidate.</p><h3>Cómo usar la lectura</h3><ul class=\"content-list\"><li>Leé una vez en silencio.</li><li>Escuchá frases tocando el texto en inglés.</li><li>Repetí en voz alta.</li><li>Intentá contar la misma historia con tus propias palabras.</li></ul></div>"
+      },
+      {
+        "id": "story-reading",
+        "title": "ANEXO FINAL: HISTORIA PARA LEER",
+        "html": "<div class=\"annex-block read-story\"><h2>ANEXO FINAL: HISTORIA PARA LEER</h2><p>Lectura creada para practicar el vocabulario y la gramática del Módulo 3 de Inglés II.</p><h3>Story for reading: A day of interviews</h3><p>Today the Human Resources team is interviewing two candidates. One candidate is applying for a Marketing Assistant position, and the other is applying for an Administrative Assistant position.</p><p>At nine o’clock, Laura is checking the CVs. At quarter past ten, she is speaking to the first candidate. The candidate is describing her experience in customer service and marketing.</p><p>In the afternoon, the team is arranging a second meeting. They are comparing skills, qualifications, and experience before they choose the best candidate.</p></div>"
+      },
+      {
+        "id": "exercises",
+        "title": "6. Ejercicios para repasar",
+        "html": "<h2>6. Ejercicios para repasar</h2><h3>Ejercicio 1 - Present Continuous</h3><ol><li>I ____ working now. (be)</li><li>She ____ interviewing a candidate. (be)</li><li>They ____ preparing a report. (be)</li><li>We ____ not attending the meeting. (be)</li></ol><details><summary>Ver respuestas</summary><ol><li>am</li><li>is</li><li>are</li><li>are</li></ol></details><h3>Ejercicio 2 - -ing form</h3><ol><li>work -&gt; ____</li><li>prepare -&gt; ____</li><li>sit -&gt; ____</li><li>write -&gt; ____</li><li>run -&gt; ____</li></ol><details><summary>Ver respuestas</summary><ol><li>working</li><li>preparing</li><li>sitting</li><li>writing</li><li>running</li></ol></details><h3>Ejercicio 3 - Time</h3><ol><li>9:00</li><li>10:15</li><li>2:30</li><li>4:45</li></ol><details><summary>Ver respuestas</summary><ol><li>nine o&#x27;clock</li><li>quarter past ten</li><li>half past two</li><li>quarter to five</li></ol></details>"
+      },
+      {
+        "id": "production",
+        "title": "7. Producción oral y escrita",
+        "html": "<h2>7. Producción oral y escrita</h2><h3>Producción oral de 30 segundos</h3><p>I am studying English and preparing for an interview. I have experience in administration, and I am good at communication. I am available on Monday at half past two.</p><h3>Producción escrita modelo</h3><p>I am applying for the Administrative Assistant position. I have experience in customer service and office administration. I am organized, responsible, and available for an interview next week.</p>"
+      },
+      {
+        "id": "checklist",
+        "title": "8. Checklist y orden de estudio",
+        "html": "<h2>8. Checklist y orden de estudio</h2><div class=\"table-wrap\"><table><tr><th>Tema</th><th>Check</th></tr><tr><td class=\"speak-cell\">Hablar de habilidades y experiencia profesional</td><td class=\"speak-cell\">[ ]</td></tr><tr><td class=\"speak-cell\">Describir actividades en desarrollo</td><td class=\"speak-cell\">[ ]</td></tr><tr><td class=\"speak-cell\">Usar Present Continuous</td><td class=\"speak-cell\">[ ]</td></tr><tr><td class=\"speak-cell\">Decir la hora</td><td class=\"speak-cell\">[ ]</td></tr><tr><td class=\"speak-cell\">Acordar una cita telefónicamente</td><td class=\"speak-cell\">[ ]</td></tr></table></div><h3>Orden ideal para repasar</h3><div class=\"table-wrap\"><table><tr><th>Día</th><th>Contenido</th></tr><tr><td class=\"speak-cell\">Día 1</td><td class=\"speak-cell\">Vocabulario de empleo, habilidades y experiencia.</td></tr><tr><td class=\"speak-cell\">Día 2</td><td class=\"speak-cell\">Present Continuous afirmativo.</td></tr><tr><td class=\"speak-cell\">Día 3</td><td class=\"speak-cell\">Negativo y preguntas.</td></tr><tr><td class=\"speak-cell\">Día 4</td><td class=\"speak-cell\">Presente simple vs presente continuo.</td></tr><tr><td class=\"speak-cell\">Día 5</td><td class=\"speak-cell\">La hora y citas telefónicas.</td></tr><tr><td class=\"speak-cell\">Día 6</td><td class=\"speak-cell\">Entrevista y producción oral.</td></tr><tr><td class=\"speak-cell\">Día 7</td><td class=\"speak-cell\">Simulacro.</td></tr></table></div>"
+      }
+    ],
+    "vocab": [
+      {
+        "term": "job",
+        "translation": "empleo",
+        "example": "I am looking for a job."
+      },
+      {
+        "term": "position",
+        "translation": "puesto",
+        "example": "This position is in Marketing."
+      },
+      {
+        "term": "candidate",
+        "translation": "candidato",
+        "example": "The candidate has experience."
+      },
+      {
+        "term": "interview",
+        "translation": "entrevista",
+        "example": "The interview is at nine."
+      },
+      {
+        "term": "CV / résumé",
+        "translation": "currículum",
+        "example": "Send your CV by email."
+      },
+      {
+        "term": "qualification",
+        "translation": "título / calificación",
+        "example": "She has a business qualification."
+      },
+      {
+        "term": "experience",
+        "translation": "experiencia",
+        "example": "He has sales experience."
+      },
+      {
+        "term": "skill",
+        "translation": "habilidad",
+        "example": "Communication is an important skill."
+      },
+      {
+        "term": "responsible",
+        "translation": "responsable",
+        "example": "She is responsible and organized."
+      },
+      {
+        "term": "organized",
+        "translation": "organizado/a",
+        "example": "An assistant needs to be organized."
+      },
+      {
+        "term": "creative",
+        "translation": "creativo/a",
+        "example": "Marketing needs creative people."
+      },
+      {
+        "term": "flexible",
+        "translation": "flexible",
+        "example": "Flexible people adapt quickly."
+      },
+      {
+        "term": "reliable",
+        "translation": "confiable",
+        "example": "A reliable employee arrives on time."
+      },
+      {
+        "term": "experienced",
+        "translation": "experimentado/a",
+        "example": "He is an experienced technician."
+      },
+      {
+        "term": "qualified",
+        "translation": "calificado/a",
+        "example": "She is qualified for the job."
+      },
+      {
+        "term": "at nine o'clock",
+        "translation": "a las nueve en punto",
+        "example": "The meeting is at nine o'clock."
+      },
+      {
+        "term": "quarter past ten",
+        "translation": "diez y cuarto",
+        "example": "The interview is at quarter past ten."
+      },
+      {
+        "term": "half past two",
+        "translation": "dos y media",
+        "example": "The call is at half past two."
+      },
+      {
+        "term": "quarter to five",
+        "translation": "cinco menos cuarto",
+        "example": "The appointment is at quarter to five."
+      }
+    ],
+    "quiz": [
+      {
+        "question": "I ____ working now. (be)",
+        "options": [
+          "am",
+          "wrong answer",
+          "another option",
+          "not sure"
+        ],
+        "answer": "am"
+      },
+      {
+        "question": "work -> ____",
+        "options": [
+          "working",
+          "wrong answer",
+          "another option",
+          "not sure"
+        ],
+        "answer": "working"
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "moduleNo": 4,
+    "course": "Inglés II",
+    "label": "Inglés II - Módulo 4",
+    "title": "Competition",
+    "spanishTitle": "La competencia",
+    "color": "#7c3aed",
+    "goals": [
+      "Comparar empresas, productos y servicios",
+      "Usar adjetivos comparativos",
+      "Decir precios",
+      "Hablar de similitudes y diferencias",
+      "Preparar una presentación breve sobre competitividad"
+    ],
+    "sections": [
+      {
+        "id": "intro",
+        "title": "Introducción",
+        "html": "<p class=\"lead\">INGLÉS II - MÓDULO 4</p><p class=\"lead\">Competition / La competencia</p><p>Resumen completo con vocabulario, gramática, frases, diálogos y ejercicios de repaso.</p><div class=\"table-wrap\"><table><tr><th>Objetivo: volver a aprender el contenido del módulo 4: comparar empresas, productos y servicios, usar adjetivos comparativos, decir precios, hablar de similitudes y diferencias, preparar una presentación breve sobre competitividad.</th></tr></table></div>"
+      },
+      {
+        "id": "goals",
+        "title": "1. Qué tenés que saber al terminar este módulo",
+        "html": "<h2>1. Qué tenés que saber al terminar este módulo</h2><ul class=\"content-list\"><li>Comparar empresas, productos y servicios</li><li>Usar adjetivos comparativos</li><li>Decir precios</li><li>Hablar de similitudes y diferencias</li><li>Preparar una presentación breve sobre competitividad</li></ul>"
+      },
+      {
+        "id": "vocab",
+        "title": "2. Vocabulario principal",
+        "html": "<h2>2. Vocabulario principal</h2><h3>Competition / Competencia</h3><div class=\"table-wrap\"><table><tr><th>English</th><th>Español</th><th>Ejemplo</th></tr><tr><td class=\"speak-cell\">competitor</td><td class=\"speak-cell\">competidor</td><td class=\"speak-cell\">Our competitor is cheaper.</td></tr><tr><td class=\"speak-cell\">market</td><td class=\"speak-cell\">mercado</td><td class=\"speak-cell\">The market is very competitive.</td></tr><tr><td class=\"speak-cell\">brand</td><td class=\"speak-cell\">marca</td><td class=\"speak-cell\">This brand is popular.</td></tr><tr><td class=\"speak-cell\">quality</td><td class=\"speak-cell\">calidad</td><td class=\"speak-cell\">Quality is important for customers.</td></tr><tr><td class=\"speak-cell\">price</td><td class=\"speak-cell\">precio</td><td class=\"speak-cell\">The price is too high.</td></tr><tr><td class=\"speak-cell\">customer service</td><td class=\"speak-cell\">atención al cliente</td><td class=\"speak-cell\">Good customer service is important.</td></tr><tr><td class=\"speak-cell\">delivery</td><td class=\"speak-cell\">entrega</td><td class=\"speak-cell\">Their delivery is faster.</td></tr><tr><td class=\"speak-cell\">value</td><td class=\"speak-cell\">valor</td><td class=\"speak-cell\">This product offers good value.</td></tr></table></div><h3>Adjectives / Adjetivos para comparar</h3><div class=\"table-wrap\"><table><tr><th>English</th><th>Español</th><th>Ejemplo</th></tr><tr><td class=\"speak-cell\">cheap</td><td class=\"speak-cell\">barato</td><td class=\"speak-cell\">This product is cheap.</td></tr><tr><td class=\"speak-cell\">expensive</td><td class=\"speak-cell\">caro</td><td class=\"speak-cell\">That service is expensive.</td></tr><tr><td class=\"speak-cell\">fast</td><td class=\"speak-cell\">rápido</td><td class=\"speak-cell\">Their delivery is fast.</td></tr><tr><td class=\"speak-cell\">slow</td><td class=\"speak-cell\">lento</td><td class=\"speak-cell\">The old system is slow.</td></tr><tr><td class=\"speak-cell\">modern</td><td class=\"speak-cell\">moderno</td><td class=\"speak-cell\">The new store is modern.</td></tr><tr><td class=\"speak-cell\">reliable</td><td class=\"speak-cell\">confiable</td><td class=\"speak-cell\">This supplier is reliable.</td></tr><tr><td class=\"speak-cell\">popular</td><td class=\"speak-cell\">popular</td><td class=\"speak-cell\">The brand is popular.</td></tr><tr><td class=\"speak-cell\">efficient</td><td class=\"speak-cell\">eficiente</td><td class=\"speak-cell\">The process is efficient.</td></tr></table></div><h3>Prices / Precios</h3><div class=\"table-wrap\"><table><tr><th>English</th><th>Español</th><th>Ejemplo</th></tr><tr><td class=\"speak-cell\">It costs ...</td><td class=\"speak-cell\">cuesta ...</td><td class=\"speak-cell\">It costs $45.60.</td></tr><tr><td class=\"speak-cell\">How much is it?</td><td class=\"speak-cell\">¿Cuánto cuesta?</td><td class=\"speak-cell\">How much is this service?</td></tr><tr><td class=\"speak-cell\">discount</td><td class=\"speak-cell\">descuento</td><td class=\"speak-cell\">They offer a ten percent discount.</td></tr><tr><td class=\"speak-cell\">more expensive</td><td class=\"speak-cell\">más caro</td><td class=\"speak-cell\">This laptop is more expensive.</td></tr><tr><td class=\"speak-cell\">cheaper</td><td class=\"speak-cell\">más barato</td><td class=\"speak-cell\">This store is cheaper.</td></tr></table></div>"
+      },
+      {
+        "id": "grammar",
+        "title": "3. Gramática del módulo",
+        "html": "<h2>3. Gramática del módulo</h2><h3>Comparative adjectives - short adjectives</h3><p>Con adjetivos cortos agregamos -er: cheap -&gt; cheaper, fast -&gt; faster. Si termina en -e, agregamos -r: large -&gt; larger.</p><div class=\"table-wrap\"><table><tr><th>English</th><th>Español</th></tr><tr><td class=\"speak-cell\">This store is cheaper than that store.</td><td class=\"speak-cell\">Esta tienda es más barata que aquella.</td></tr><tr><td class=\"speak-cell\">Their delivery is faster than ours.</td><td class=\"speak-cell\">Su entrega es más rápida que la nuestra.</td></tr></table></div><h3>Comparative adjectives - long adjectives</h3><p>Con adjetivos largos usamos more + adjective.</p><div class=\"table-wrap\"><table><tr><th>English</th><th>Español</th></tr><tr><td class=\"speak-cell\">This product is more expensive than that one.</td><td class=\"speak-cell\">Este producto es más caro que aquel.</td></tr><tr><td class=\"speak-cell\">Their service is more reliable.</td><td class=\"speak-cell\">Su servicio es más confiable.</td></tr></table></div><h3>Irregular comparatives</h3><p>Good -&gt; better. Bad -&gt; worse.</p><div class=\"table-wrap\"><table><tr><th>English</th><th>Español</th></tr><tr><td class=\"speak-cell\">This option is better.</td><td class=\"speak-cell\">Esta opción es mejor.</td></tr><tr><td class=\"speak-cell\">The old system is worse.</td><td class=\"speak-cell\">El sistema viejo es peor.</td></tr></table></div><h3>Than / as ... as</h3><p>Usamos than para comparar diferencias y as ... as para similitudes.</p><div class=\"table-wrap\"><table><tr><th>English</th><th>Español</th></tr><tr><td class=\"speak-cell\">Company A is bigger than Company B.</td><td class=\"speak-cell\">La empresa A es más grande que la B.</td></tr><tr><td class=\"speak-cell\">This product is as good as that one.</td><td class=\"speak-cell\">Este producto es tan bueno como aquel.</td></tr></table></div>"
+      },
+      {
+        "id": "phrases",
+        "title": "4. Frases base del módulo",
+        "html": "<h2>4. Frases base del módulo</h2><div class=\"table-wrap\"><table><tr><th>English</th><th>Uso / Español</th></tr><tr><td class=\"speak-cell\">Company A is cheaper than Company B.</td><td class=\"speak-cell\">Comparar dos empresas.</td></tr><tr><td class=\"speak-cell\">This product is better quality.</td><td class=\"speak-cell\">Hablar de calidad.</td></tr><tr><td class=\"speak-cell\">How much does it cost?</td><td class=\"speak-cell\">Preguntar precio.</td></tr><tr><td class=\"speak-cell\">It costs fifty dollars.</td><td class=\"speak-cell\">Decir precio.</td></tr><tr><td class=\"speak-cell\">It is the same as the old model.</td><td class=\"speak-cell\">Hablar de similitud.</td></tr><tr><td class=\"speak-cell\">It is different from our product.</td><td class=\"speak-cell\">Hablar de diferencia.</td></tr><tr><td class=\"speak-cell\">I think our service is faster.</td><td class=\"speak-cell\">Dar opinión sobre competencia.</td></tr></table></div>"
+      },
+      {
+        "id": "key-expressions",
+        "title": "KEY EXPRESSIONS / FRASES CLAVE DEL LIBRO",
+        "html": "<div class=\"annex-block\"><h2>KEY EXPRESSIONS / FRASES CLAVE DEL LIBRO</h2><p>Frases clave del módulo para practicar en voz alta. Tocá cualquier frase en inglés para escucharla.</p><div class=\"table-wrap\"><table><tr><th>Función</th><th>Key expression</th><th>Español / uso</th></tr><tr><td class=\"speak-cell\">Comparing</td><td class=\"speak-cell\">Company A is cheaper than Company B.</td><td class=\"speak-cell\">Comparar dos empresas.</td></tr><tr><td class=\"speak-cell\">Quality</td><td class=\"speak-cell\">This product is better quality.</td><td class=\"speak-cell\">Hablar de calidad.</td></tr><tr><td class=\"speak-cell\">Price</td><td class=\"speak-cell\">How much does it cost?</td><td class=\"speak-cell\">Preguntar precio.</td></tr><tr><td class=\"speak-cell\">Price answer</td><td class=\"speak-cell\">It costs fifty dollars.</td><td class=\"speak-cell\">Decir precio.</td></tr><tr><td class=\"speak-cell\">Similarity</td><td class=\"speak-cell\">It is the same as the old model.</td><td class=\"speak-cell\">Hablar de similitud.</td></tr><tr><td class=\"speak-cell\">Difference</td><td class=\"speak-cell\">It is different from our product.</td><td class=\"speak-cell\">Hablar de diferencia.</td></tr><tr><td class=\"speak-cell\">Opinion</td><td class=\"speak-cell\">I think our service is faster.</td><td class=\"speak-cell\">Dar opinión sobre competencia.</td></tr></table></div></div>"
+      },
+      {
+        "id": "dialogues",
+        "title": "5. Diálogos del módulo",
+        "html": "<h2>5. Diálogos del módulo</h2><h3>Comparing two products</h3><p>Practicar comparativos y precios.</p><div class=\"table-wrap\"><table><tr><th>Speaker</th><th>English</th><th>Español</th></tr><tr><td class=\"speak-cell\">A</td><td class=\"speak-cell\">Which laptop is better?</td><td class=\"speak-cell\">¿Qué laptop es mejor?</td></tr><tr><td class=\"speak-cell\">B</td><td class=\"speak-cell\">The blue one is faster, but it is more expensive.</td><td class=\"speak-cell\">La azul es más rápida, pero es más cara.</td></tr><tr><td class=\"speak-cell\">A</td><td class=\"speak-cell\">How much does it cost?</td><td class=\"speak-cell\">¿Cuánto cuesta?</td></tr><tr><td class=\"speak-cell\">B</td><td class=\"speak-cell\">It costs eight hundred dollars.</td><td class=\"speak-cell\">Cuesta ochocientos dólares.</td></tr><tr><td class=\"speak-cell\">A</td><td class=\"speak-cell\">Is the black one cheaper?</td><td class=\"speak-cell\">¿La negra es más barata?</td></tr><tr><td class=\"speak-cell\">B</td><td class=\"speak-cell\">Yes, but the battery is worse.</td><td class=\"speak-cell\">Sí, pero la batería es peor.</td></tr></table></div><h3>A competitive company</h3><p>Practicar presentación breve.</p><div class=\"table-wrap\"><table><tr><th>Speaker</th><th>English</th><th>Español</th></tr><tr><td class=\"speak-cell\">A</td><td class=\"speak-cell\">Why is your company competitive?</td><td class=\"speak-cell\">¿Por qué tu empresa es competitiva?</td></tr><tr><td class=\"speak-cell\">B</td><td class=\"speak-cell\">Our prices are lower than our competitors.</td><td class=\"speak-cell\">Nuestros precios son más bajos que los de nuestros competidores.</td></tr><tr><td class=\"speak-cell\">A</td><td class=\"speak-cell\">What about quality?</td><td class=\"speak-cell\">¿Qué pasa con la calidad?</td></tr><tr><td class=\"speak-cell\">B</td><td class=\"speak-cell\">Our quality is better, and our delivery is faster.</td><td class=\"speak-cell\">Nuestra calidad es mejor y nuestra entrega es más rápida.</td></tr><tr><td class=\"speak-cell\">A</td><td class=\"speak-cell\">That sounds good.</td><td class=\"speak-cell\">Eso suena bien.</td></tr><tr><td class=\"speak-cell\">B</td><td class=\"speak-cell\">Yes, customers like our service.</td><td class=\"speak-cell\">Sí, a los clientes les gusta nuestro servicio.</td></tr></table></div>"
+      },
+      {
+        "id": "reading-audio",
+        "title": "LECTURA DEL LIBRO Y FRASES DEL AUDIO SCRIPT",
+        "html": "<div class=\"annex-block\"><h2>LECTURA DEL LIBRO Y FRASES DEL AUDIO SCRIPT</h2><p>Lectura guiada basada en el tema del módulo 4 (Competition).</p><h3>Historia / lectura: Two supermarkets in the same town</h3><p>There are two supermarkets in the same town: FreshMart and DailyShop. FreshMart is bigger and more modern, but DailyShop is cheaper.</p><p>FreshMart has better parking and faster delivery. DailyShop has lower prices and friendlier staff. Customers compare prices, quality, location, and service before they choose where to buy.</p><p>In a presentation, the manager says: Our supermarket is more competitive because our prices are lower, our service is better, and our products are fresher.</p><h3>Cómo usar la lectura</h3><ul class=\"content-list\"><li>Leé una vez en silencio.</li><li>Escuchá frases tocando el texto en inglés.</li><li>Repetí en voz alta.</li><li>Intentá contar la misma historia con tus propias palabras.</li></ul></div>"
+      },
+      {
+        "id": "story-reading",
+        "title": "ANEXO FINAL: HISTORIA PARA LEER",
+        "html": "<div class=\"annex-block read-story\"><h2>ANEXO FINAL: HISTORIA PARA LEER</h2><p>Lectura creada para practicar el vocabulario y la gramática del Módulo 4 de Inglés II.</p><h3>Story for reading: Two supermarkets in the same town</h3><p>There are two supermarkets in the same town: FreshMart and DailyShop. FreshMart is bigger and more modern, but DailyShop is cheaper.</p><p>FreshMart has better parking and faster delivery. DailyShop has lower prices and friendlier staff. Customers compare prices, quality, location, and service before they choose where to buy.</p><p>In a presentation, the manager says: Our supermarket is more competitive because our prices are lower, our service is better, and our products are fresher.</p></div>"
+      },
+      {
+        "id": "exercises",
+        "title": "6. Ejercicios para repasar",
+        "html": "<h2>6. Ejercicios para repasar</h2><h3>Ejercicio 1 - Comparatives</h3><ol><li>cheap -&gt; ____</li><li>fast -&gt; ____</li><li>large -&gt; ____</li><li>expensive -&gt; ____</li><li>good -&gt; ____</li><li>bad -&gt; ____</li></ol><details><summary>Ver respuestas</summary><ol><li>cheaper</li><li>faster</li><li>larger</li><li>more expensive</li><li>better</li><li>worse</li></ol></details><h3>Ejercicio 2 - Complete</h3><ol><li>Company A is ____ than Company B. (cheap)</li><li>This service is ____ reliable than that service.</li><li>The new model is ____ than the old model. (good)</li><li>Our delivery is ____ than theirs. (fast)</li></ol><details><summary>Ver respuestas</summary><ol><li>cheaper</li><li>more</li><li>better</li><li>faster</li></ol></details><h3>Ejercicio 3 - Prices</h3><ol><li>$45.60</li><li>$120</li><li>$1,300</li></ol><details><summary>Ver respuestas</summary><ol><li>forty-five dollars and sixty cents</li><li>one hundred and twenty dollars</li><li>one thousand three hundred dollars</li></ol></details>"
+      },
+      {
+        "id": "production",
+        "title": "7. Producción oral y escrita",
+        "html": "<h2>7. Producción oral y escrita</h2><h3>Producción oral de 30 segundos</h3><p>Our company is competitive because our prices are lower and our service is faster. Our products are more reliable than our competitors, and customers like our quality.</p><h3>Producción escrita modelo</h3><p>Supermarket A is bigger and more modern than Supermarket B. However, Supermarket B is cheaper and has better customer service. In my opinion, price and service are the most important factors.</p>"
+      },
+      {
+        "id": "checklist",
+        "title": "8. Checklist y orden de estudio",
+        "html": "<h2>8. Checklist y orden de estudio</h2><div class=\"table-wrap\"><table><tr><th>Tema</th><th>Check</th></tr><tr><td class=\"speak-cell\">Comparar empresas, productos y servicios</td><td class=\"speak-cell\">[ ]</td></tr><tr><td class=\"speak-cell\">Usar adjetivos comparativos</td><td class=\"speak-cell\">[ ]</td></tr><tr><td class=\"speak-cell\">Decir precios</td><td class=\"speak-cell\">[ ]</td></tr><tr><td class=\"speak-cell\">Hablar de similitudes y diferencias</td><td class=\"speak-cell\">[ ]</td></tr><tr><td class=\"speak-cell\">Preparar una presentación breve sobre competitividad</td><td class=\"speak-cell\">[ ]</td></tr></table></div><h3>Orden ideal para repasar</h3><div class=\"table-wrap\"><table><tr><th>Día</th><th>Contenido</th></tr><tr><td class=\"speak-cell\">Día 1</td><td class=\"speak-cell\">Vocabulario de competencia, precios y calidad.</td></tr><tr><td class=\"speak-cell\">Día 2</td><td class=\"speak-cell\">Comparativos cortos.</td></tr><tr><td class=\"speak-cell\">Día 3</td><td class=\"speak-cell\">Comparativos largos e irregulares.</td></tr><tr><td class=\"speak-cell\">Día 4</td><td class=\"speak-cell\">than y as...as.</td></tr><tr><td class=\"speak-cell\">Día 5</td><td class=\"speak-cell\">Decir precios y comparar productos.</td></tr><tr><td class=\"speak-cell\">Día 6</td><td class=\"speak-cell\">Presentación breve.</td></tr><tr><td class=\"speak-cell\">Día 7</td><td class=\"speak-cell\">Simulacro oral.</td></tr></table></div>"
+      }
+    ],
+    "vocab": [
+      {
+        "term": "competitor",
+        "translation": "competidor",
+        "example": "Our competitor is cheaper."
+      },
+      {
+        "term": "market",
+        "translation": "mercado",
+        "example": "The market is very competitive."
+      },
+      {
+        "term": "brand",
+        "translation": "marca",
+        "example": "This brand is popular."
+      },
+      {
+        "term": "quality",
+        "translation": "calidad",
+        "example": "Quality is important for customers."
+      },
+      {
+        "term": "price",
+        "translation": "precio",
+        "example": "The price is too high."
+      },
+      {
+        "term": "customer service",
+        "translation": "atención al cliente",
+        "example": "Good customer service is important."
+      },
+      {
+        "term": "delivery",
+        "translation": "entrega",
+        "example": "Their delivery is faster."
+      },
+      {
+        "term": "value",
+        "translation": "valor",
+        "example": "This product offers good value."
+      },
+      {
+        "term": "cheap",
+        "translation": "barato",
+        "example": "This product is cheap."
+      },
+      {
+        "term": "expensive",
+        "translation": "caro",
+        "example": "That service is expensive."
+      },
+      {
+        "term": "fast",
+        "translation": "rápido",
+        "example": "Their delivery is fast."
+      },
+      {
+        "term": "slow",
+        "translation": "lento",
+        "example": "The old system is slow."
+      },
+      {
+        "term": "modern",
+        "translation": "moderno",
+        "example": "The new store is modern."
+      },
+      {
+        "term": "reliable",
+        "translation": "confiable",
+        "example": "This supplier is reliable."
+      },
+      {
+        "term": "popular",
+        "translation": "popular",
+        "example": "The brand is popular."
+      },
+      {
+        "term": "efficient",
+        "translation": "eficiente",
+        "example": "The process is efficient."
+      },
+      {
+        "term": "It costs ...",
+        "translation": "cuesta ...",
+        "example": "It costs $45.60."
+      },
+      {
+        "term": "How much is it?",
+        "translation": "¿Cuánto cuesta?",
+        "example": "How much is this service?"
+      },
+      {
+        "term": "discount",
+        "translation": "descuento",
+        "example": "They offer a ten percent discount."
+      },
+      {
+        "term": "more expensive",
+        "translation": "más caro",
+        "example": "This laptop is more expensive."
+      },
+      {
+        "term": "cheaper",
+        "translation": "más barato",
+        "example": "This store is cheaper."
+      }
+    ],
+    "quiz": [
+      {
+        "question": "cheap -> ____",
+        "options": [
+          "cheaper",
+          "wrong answer",
+          "another option",
+          "not sure"
+        ],
+        "answer": "cheaper"
+      },
+      {
+        "question": "Company A is ____ than Company B. (cheap)",
+        "options": [
+          "cheaper",
+          "wrong answer",
+          "another option",
+          "not sure"
+        ],
+        "answer": "cheaper"
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "moduleNo": 5,
+    "course": "Inglés II",
+    "label": "Inglés II - Módulo 5",
+    "title": "Teamwork",
+    "spanishTitle": "Trabajo en equipo",
+    "color": "#0891b2",
+    "goals": [
+      "Describir trabajo en equipo",
+      "Expresar opiniones",
+      "Reaccionar ante buenas y malas noticias",
+      "Usar superlativos",
+      "Hablar de personalidad y roles de equipo"
+    ],
+    "sections": [
+      {
+        "id": "intro",
+        "title": "Introducción",
+        "html": "<p class=\"lead\">INGLÉS II - MÓDULO 5</p><p class=\"lead\">Teamwork / Trabajo en equipo</p><p>Resumen completo con vocabulario, gramática, frases, diálogos y ejercicios de repaso.</p><div class=\"table-wrap\"><table><tr><th>Objetivo: volver a aprender el contenido del módulo 5: describir trabajo en equipo, expresar opiniones, reaccionar ante buenas y malas noticias, usar superlativos, hablar de personalidad y roles de equipo.</th></tr></table></div>"
+      },
+      {
+        "id": "goals",
+        "title": "1. Qué tenés que saber al terminar este módulo",
+        "html": "<h2>1. Qué tenés que saber al terminar este módulo</h2><ul class=\"content-list\"><li>Describir trabajo en equipo</li><li>Expresar opiniones</li><li>Reaccionar ante buenas y malas noticias</li><li>Usar superlativos</li><li>Hablar de personalidad y roles de equipo</li></ul>"
+      },
+      {
+        "id": "vocab",
+        "title": "2. Vocabulario principal",
+        "html": "<h2>2. Vocabulario principal</h2><h3>Teamwork / Trabajo en equipo</h3><div class=\"table-wrap\"><table><tr><th>English</th><th>Español</th><th>Ejemplo</th></tr><tr><td class=\"speak-cell\">team</td><td class=\"speak-cell\">equipo</td><td class=\"speak-cell\">Our team is small.</td></tr><tr><td class=\"speak-cell\">team leader</td><td class=\"speak-cell\">líder de equipo</td><td class=\"speak-cell\">The team leader organizes tasks.</td></tr><tr><td class=\"speak-cell\">member</td><td class=\"speak-cell\">miembro</td><td class=\"speak-cell\">Each member has a role.</td></tr><tr><td class=\"speak-cell\">task</td><td class=\"speak-cell\">tarea</td><td class=\"speak-cell\">We have many tasks today.</td></tr><tr><td class=\"speak-cell\">deadline</td><td class=\"speak-cell\">fecha límite</td><td class=\"speak-cell\">The deadline is Friday.</td></tr><tr><td class=\"speak-cell\">goal</td><td class=\"speak-cell\">objetivo</td><td class=\"speak-cell\">Our goal is to finish the project.</td></tr><tr><td class=\"speak-cell\">project</td><td class=\"speak-cell\">proyecto</td><td class=\"speak-cell\">The project is important.</td></tr><tr><td class=\"speak-cell\">problem solver</td><td class=\"speak-cell\">persona que resuelve problemas</td><td class=\"speak-cell\">She is a good problem solver.</td></tr></table></div><h3>Opinions / Opiniones</h3><div class=\"table-wrap\"><table><tr><th>English</th><th>Español</th><th>Ejemplo</th></tr><tr><td class=\"speak-cell\">I think ...</td><td class=\"speak-cell\">creo que ...</td><td class=\"speak-cell\">I think teamwork is important.</td></tr><tr><td class=\"speak-cell\">In my opinion ...</td><td class=\"speak-cell\">en mi opinión ...</td><td class=\"speak-cell\">In my opinion, communication is key.</td></tr><tr><td class=\"speak-cell\">I agree</td><td class=\"speak-cell\">estoy de acuerdo</td><td class=\"speak-cell\">I agree with you.</td></tr><tr><td class=\"speak-cell\">I don&#x27;t agree</td><td class=\"speak-cell\">no estoy de acuerdo</td><td class=\"speak-cell\">I don&#x27;t agree with that idea.</td></tr><tr><td class=\"speak-cell\">That is true</td><td class=\"speak-cell\">eso es verdad</td><td class=\"speak-cell\">That is true, but it is difficult.</td></tr><tr><td class=\"speak-cell\">The best option</td><td class=\"speak-cell\">la mejor opción</td><td class=\"speak-cell\">The best option is to call the customer.</td></tr></table></div><h3>Reacting to news / Reaccionar ante noticias</h3><div class=\"table-wrap\"><table><tr><th>English</th><th>Español</th><th>Ejemplo</th></tr><tr><td class=\"speak-cell\">That is great news!</td><td class=\"speak-cell\">¡Qué buena noticia!</td><td class=\"speak-cell\">That is great news!</td></tr><tr><td class=\"speak-cell\">Congratulations!</td><td class=\"speak-cell\">¡Felicitaciones!</td><td class=\"speak-cell\">Congratulations on your new job!</td></tr><tr><td class=\"speak-cell\">That is a pity.</td><td class=\"speak-cell\">Qué pena.</td><td class=\"speak-cell\">That is a pity.</td></tr><tr><td class=\"speak-cell\">I am sorry to hear that.</td><td class=\"speak-cell\">Lamento escuchar eso.</td><td class=\"speak-cell\">I am sorry to hear that.</td></tr><tr><td class=\"speak-cell\">Really?</td><td class=\"speak-cell\">¿En serio?</td><td class=\"speak-cell\">Really? What happened?</td></tr></table></div>"
+      },
+      {
+        "id": "grammar",
+        "title": "3. Gramática del módulo",
+        "html": "<h2>3. Gramática del módulo</h2><h3>Superlative adjectives - short adjectives</h3><p>Con adjetivos cortos usamos the + adjective + -est.</p><div class=\"table-wrap\"><table><tr><th>English</th><th>Español</th></tr><tr><td class=\"speak-cell\">This is the cheapest product.</td><td class=\"speak-cell\">Este es el producto más barato.</td></tr><tr><td class=\"speak-cell\">He is the fastest worker in the team.</td><td class=\"speak-cell\">Él es el trabajador más rápido del equipo.</td></tr></table></div><h3>Superlative adjectives - long adjectives</h3><p>Con adjetivos largos usamos the most + adjective.</p><div class=\"table-wrap\"><table><tr><th>English</th><th>Español</th></tr><tr><td class=\"speak-cell\">This is the most important task.</td><td class=\"speak-cell\">Esta es la tarea más importante.</td></tr><tr><td class=\"speak-cell\">She is the most organized person in the team.</td><td class=\"speak-cell\">Ella es la persona más organizada del equipo.</td></tr></table></div><h3>Irregular superlatives</h3><p>Good -&gt; the best. Bad -&gt; the worst.</p><div class=\"table-wrap\"><table><tr><th>English</th><th>Español</th></tr><tr><td class=\"speak-cell\">This is the best idea.</td><td class=\"speak-cell\">Esta es la mejor idea.</td></tr><tr><td class=\"speak-cell\">That was the worst problem.</td><td class=\"speak-cell\">Ese fue el peor problema.</td></tr></table></div><h3>In / of with superlatives</h3><p>Usamos in para lugares o grupos; of para conjuntos o períodos.</p><div class=\"table-wrap\"><table><tr><th>English</th><th>Español</th></tr><tr><td class=\"speak-cell\">He is the best salesperson in the company.</td><td class=\"speak-cell\">Él es el mejor vendedor de la empresa.</td></tr><tr><td class=\"speak-cell\">Monday is the busiest day of the week.</td><td class=\"speak-cell\">El lunes es el día más ocupado de la semana.</td></tr></table></div>"
+      },
+      {
+        "id": "phrases",
+        "title": "4. Frases base del módulo",
+        "html": "<h2>4. Frases base del módulo</h2><div class=\"table-wrap\"><table><tr><th>English</th><th>Uso / Español</th></tr><tr><td class=\"speak-cell\">What do you think?</td><td class=\"speak-cell\">Pedir una opinión.</td></tr><tr><td class=\"speak-cell\">I think teamwork is important.</td><td class=\"speak-cell\">Dar una opinión.</td></tr><tr><td class=\"speak-cell\">I agree with you.</td><td class=\"speak-cell\">Estar de acuerdo.</td></tr><tr><td class=\"speak-cell\">I do not agree.</td><td class=\"speak-cell\">No estar de acuerdo.</td></tr><tr><td class=\"speak-cell\">That is great news!</td><td class=\"speak-cell\">Reaccionar a buena noticia.</td></tr><tr><td class=\"speak-cell\">I am sorry to hear that.</td><td class=\"speak-cell\">Reaccionar a mala noticia.</td></tr><tr><td class=\"speak-cell\">This is the best option.</td><td class=\"speak-cell\">Elegir la mejor opción.</td></tr></table></div>"
+      },
+      {
+        "id": "key-expressions",
+        "title": "KEY EXPRESSIONS / FRASES CLAVE DEL LIBRO",
+        "html": "<div class=\"annex-block\"><h2>KEY EXPRESSIONS / FRASES CLAVE DEL LIBRO</h2><p>Frases clave del módulo para practicar en voz alta. Tocá cualquier frase en inglés para escucharla.</p><div class=\"table-wrap\"><table><tr><th>Función</th><th>Key expression</th><th>Español / uso</th></tr><tr><td class=\"speak-cell\">Opinion</td><td class=\"speak-cell\">What do you think?</td><td class=\"speak-cell\">Pedir una opinión.</td></tr><tr><td class=\"speak-cell\">Opinion answer</td><td class=\"speak-cell\">I think teamwork is important.</td><td class=\"speak-cell\">Dar una opinión.</td></tr><tr><td class=\"speak-cell\">Agreement</td><td class=\"speak-cell\">I agree with you.</td><td class=\"speak-cell\">Estar de acuerdo.</td></tr><tr><td class=\"speak-cell\">Disagreement</td><td class=\"speak-cell\">I do not agree.</td><td class=\"speak-cell\">No estar de acuerdo.</td></tr><tr><td class=\"speak-cell\">Good news</td><td class=\"speak-cell\">That is great news!</td><td class=\"speak-cell\">Reaccionar a buena noticia.</td></tr><tr><td class=\"speak-cell\">Bad news</td><td class=\"speak-cell\">I am sorry to hear that.</td><td class=\"speak-cell\">Reaccionar a mala noticia.</td></tr><tr><td class=\"speak-cell\">Superlative</td><td class=\"speak-cell\">This is the best option.</td><td class=\"speak-cell\">Elegir la mejor opción.</td></tr></table></div></div>"
+      },
+      {
+        "id": "dialogues",
+        "title": "5. Diálogos del módulo",
+        "html": "<h2>5. Diálogos del módulo</h2><h3>Reacting to news</h3><p>Practicar reacciones.</p><div class=\"table-wrap\"><table><tr><th>Speaker</th><th>English</th><th>Español</th></tr><tr><td class=\"speak-cell\">A</td><td class=\"speak-cell\">I have good news. We finished the project early.</td><td class=\"speak-cell\">Tengo buenas noticias. Terminamos el proyecto antes de tiempo.</td></tr><tr><td class=\"speak-cell\">B</td><td class=\"speak-cell\">That is great news! Congratulations!</td><td class=\"speak-cell\">¡Qué buena noticia! ¡Felicitaciones!</td></tr><tr><td class=\"speak-cell\">A</td><td class=\"speak-cell\">Thank you. The team worked very well.</td><td class=\"speak-cell\">Gracias. El equipo trabajó muy bien.</td></tr><tr><td class=\"speak-cell\">B</td><td class=\"speak-cell\">Who was the most organized person?</td><td class=\"speak-cell\">¿Quién fue la persona más organizada?</td></tr><tr><td class=\"speak-cell\">A</td><td class=\"speak-cell\">Ana was the most organized.</td><td class=\"speak-cell\">Ana fue la más organizada.</td></tr><tr><td class=\"speak-cell\">B</td><td class=\"speak-cell\">Excellent. She is a great team member.</td><td class=\"speak-cell\">Excelente. Es una gran integrante del equipo.</td></tr></table></div><h3>Opinions about teamwork</h3><p>Practicar opiniones y superlativos.</p><div class=\"table-wrap\"><table><tr><th>Speaker</th><th>English</th><th>Español</th></tr><tr><td class=\"speak-cell\">A</td><td class=\"speak-cell\">What do you think about teamwork?</td><td class=\"speak-cell\">¿Qué pensás sobre el trabajo en equipo?</td></tr><tr><td class=\"speak-cell\">B</td><td class=\"speak-cell\">I think it is the best way to solve problems.</td><td class=\"speak-cell\">Creo que es la mejor forma de resolver problemas.</td></tr><tr><td class=\"speak-cell\">A</td><td class=\"speak-cell\">I agree. Communication is the most important thing.</td><td class=\"speak-cell\">Estoy de acuerdo. La comunicación es lo más importante.</td></tr><tr><td class=\"speak-cell\">B</td><td class=\"speak-cell\">Yes, and a good team leader is important too.</td><td class=\"speak-cell\">Sí, y un buen líder de equipo también es importante.</td></tr><tr><td class=\"speak-cell\">A</td><td class=\"speak-cell\">What is the most difficult part?</td><td class=\"speak-cell\">¿Cuál es la parte más difícil?</td></tr><tr><td class=\"speak-cell\">B</td><td class=\"speak-cell\">The most difficult part is organizing everybody.</td><td class=\"speak-cell\">La parte más difícil es organizar a todos.</td></tr></table></div>"
+      },
+      {
+        "id": "reading-audio",
+        "title": "LECTURA DEL LIBRO Y FRASES DEL AUDIO SCRIPT",
+        "html": "<div class=\"annex-block\"><h2>LECTURA DEL LIBRO Y FRASES DEL AUDIO SCRIPT</h2><p>Lectura guiada basada en el tema del módulo 5 (Teamwork).</p><h3>Historia / lectura: The best team for the project</h3><p>A company needs a team for a new project. The project is very important because the deadline is short and the customer is waiting for a solution.</p><p>The team has five members. Ana is the most organized, Mark is the most creative, Julia is the best communicator, and Luis is the fastest problem solver. The team leader thinks that communication is the most important skill.</p><p>At the end of the week, the team finishes the project early. The manager says: That is great news. Congratulations. This is the best result of the month.</p><h3>Cómo usar la lectura</h3><ul class=\"content-list\"><li>Leé una vez en silencio.</li><li>Escuchá frases tocando el texto en inglés.</li><li>Repetí en voz alta.</li><li>Intentá contar la misma historia con tus propias palabras.</li></ul></div>"
+      },
+      {
+        "id": "story-reading",
+        "title": "ANEXO FINAL: HISTORIA PARA LEER",
+        "html": "<div class=\"annex-block read-story\"><h2>ANEXO FINAL: HISTORIA PARA LEER</h2><p>Lectura creada para practicar el vocabulario y la gramática del Módulo 5 de Inglés II.</p><h3>Story for reading: The best team for the project</h3><p>A company needs a team for a new project. The project is very important because the deadline is short and the customer is waiting for a solution.</p><p>The team has five members. Ana is the most organized, Mark is the most creative, Julia is the best communicator, and Luis is the fastest problem solver. The team leader thinks that communication is the most important skill.</p><p>At the end of the week, the team finishes the project early. The manager says: That is great news. Congratulations. This is the best result of the month.</p></div>"
+      },
+      {
+        "id": "exercises",
+        "title": "6. Ejercicios para repasar",
+        "html": "<h2>6. Ejercicios para repasar</h2><h3>Ejercicio 1 - Superlatives</h3><ol><li>cheap -&gt; ____</li><li>fast -&gt; ____</li><li>important -&gt; ____</li><li>good -&gt; ____</li><li>bad -&gt; ____</li></ol><details><summary>Ver respuestas</summary><ol><li>the cheapest</li><li>the fastest</li><li>the most important</li><li>the best</li><li>the worst</li></ol></details><h3>Ejercicio 2 - Opinions</h3><ol><li>Completa: I ____ teamwork is important.</li><li>Completa: In my ____ , communication is key.</li><li>Completa: I ____ with you.</li><li>Completa: I do not ____ .</li></ol><details><summary>Ver respuestas</summary><ol><li>think</li><li>opinion</li><li>agree</li><li>agree</li></ol></details><h3>Ejercicio 3 - Reactions</h3><ol><li>Buenas noticias: ____</li><li>Felicitación: ____</li><li>Mala noticia: ____</li><li>Sorpresa: ____</li></ol><details><summary>Ver respuestas</summary><ol><li>That is great news!</li><li>Congratulations!</li><li>I am sorry to hear that.</li><li>Really?</li></ol></details>"
+      },
+      {
+        "id": "production",
+        "title": "7. Producción oral y escrita",
+        "html": "<h2>7. Producción oral y escrita</h2><h3>Producción oral de 30 segundos</h3><p>In my opinion, teamwork is very important. The best teams communicate well, respect deadlines, and solve problems together. A good team leader helps every member.</p><h3>Producción escrita modelo</h3><p>I think teamwork is the best way to complete a difficult project. The most important skills are communication, organization, and responsibility. A good team helps every member succeed.</p>"
+      },
+      {
+        "id": "checklist",
+        "title": "8. Checklist y orden de estudio",
+        "html": "<h2>8. Checklist y orden de estudio</h2><div class=\"table-wrap\"><table><tr><th>Tema</th><th>Check</th></tr><tr><td class=\"speak-cell\">Describir trabajo en equipo</td><td class=\"speak-cell\">[ ]</td></tr><tr><td class=\"speak-cell\">Expresar opiniones</td><td class=\"speak-cell\">[ ]</td></tr><tr><td class=\"speak-cell\">Reaccionar ante buenas y malas noticias</td><td class=\"speak-cell\">[ ]</td></tr><tr><td class=\"speak-cell\">Usar superlativos</td><td class=\"speak-cell\">[ ]</td></tr><tr><td class=\"speak-cell\">Hablar de personalidad y roles de equipo</td><td class=\"speak-cell\">[ ]</td></tr></table></div><h3>Orden ideal para repasar</h3><div class=\"table-wrap\"><table><tr><th>Día</th><th>Contenido</th></tr><tr><td class=\"speak-cell\">Día 1</td><td class=\"speak-cell\">Vocabulario de teamwork y personalidad.</td></tr><tr><td class=\"speak-cell\">Día 2</td><td class=\"speak-cell\">Superlativos cortos.</td></tr><tr><td class=\"speak-cell\">Día 3</td><td class=\"speak-cell\">Superlativos largos e irregulares.</td></tr><tr><td class=\"speak-cell\">Día 4</td><td class=\"speak-cell\">Opiniones y acuerdos.</td></tr><tr><td class=\"speak-cell\">Día 5</td><td class=\"speak-cell\">Reacciones a noticias.</td></tr><tr><td class=\"speak-cell\">Día 6</td><td class=\"speak-cell\">Diálogos y lectura.</td></tr><tr><td class=\"speak-cell\">Día 7</td><td class=\"speak-cell\">Simulacro oral.</td></tr></table></div>"
+      }
+    ],
+    "vocab": [
+      {
+        "term": "team",
+        "translation": "equipo",
+        "example": "Our team is small."
+      },
+      {
+        "term": "team leader",
+        "translation": "líder de equipo",
+        "example": "The team leader organizes tasks."
+      },
+      {
+        "term": "member",
+        "translation": "miembro",
+        "example": "Each member has a role."
+      },
+      {
+        "term": "task",
+        "translation": "tarea",
+        "example": "We have many tasks today."
+      },
+      {
+        "term": "deadline",
+        "translation": "fecha límite",
+        "example": "The deadline is Friday."
+      },
+      {
+        "term": "goal",
+        "translation": "objetivo",
+        "example": "Our goal is to finish the project."
+      },
+      {
+        "term": "project",
+        "translation": "proyecto",
+        "example": "The project is important."
+      },
+      {
+        "term": "problem solver",
+        "translation": "persona que resuelve problemas",
+        "example": "She is a good problem solver."
+      },
+      {
+        "term": "I think ...",
+        "translation": "creo que ...",
+        "example": "I think teamwork is important."
+      },
+      {
+        "term": "In my opinion ...",
+        "translation": "en mi opinión ...",
+        "example": "In my opinion, communication is key."
+      },
+      {
+        "term": "I agree",
+        "translation": "estoy de acuerdo",
+        "example": "I agree with you."
+      },
+      {
+        "term": "I don't agree",
+        "translation": "no estoy de acuerdo",
+        "example": "I don't agree with that idea."
+      },
+      {
+        "term": "That is true",
+        "translation": "eso es verdad",
+        "example": "That is true, but it is difficult."
+      },
+      {
+        "term": "The best option",
+        "translation": "la mejor opción",
+        "example": "The best option is to call the customer."
+      },
+      {
+        "term": "That is great news!",
+        "translation": "¡Qué buena noticia!",
+        "example": "That is great news!"
+      },
+      {
+        "term": "Congratulations!",
+        "translation": "¡Felicitaciones!",
+        "example": "Congratulations on your new job!"
+      },
+      {
+        "term": "That is a pity.",
+        "translation": "Qué pena.",
+        "example": "That is a pity."
+      },
+      {
+        "term": "I am sorry to hear that.",
+        "translation": "Lamento escuchar eso.",
+        "example": "I am sorry to hear that."
+      },
+      {
+        "term": "Really?",
+        "translation": "¿En serio?",
+        "example": "Really? What happened?"
+      }
+    ],
+    "quiz": [
+      {
+        "question": "cheap -> ____",
+        "options": [
+          "the cheapest",
+          "wrong answer",
+          "another option",
+          "not sure"
+        ],
+        "answer": "the cheapest"
+      },
+      {
+        "question": "Completa: I ____ teamwork is important.",
+        "options": [
+          "think",
+          "wrong answer",
+          "another option",
+          "not sure"
+        ],
+        "answer": "think"
       }
     ]
   }
