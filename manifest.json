@@ -1,0 +1,16 @@
+{
+  "name": "Inglés I Study Hub",
+  "short_name": "Inglés I",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#0f172a",
+  "theme_color": "#0f172a",
+  "description": "Plataforma interactiva de estudio para Inglés I.",
+  "icons": [
+    {
+      "src": "icons/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}
