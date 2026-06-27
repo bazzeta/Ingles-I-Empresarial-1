@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Inglés I Study Hub</title>
+  <meta name="description" content="Plataforma interactiva de estudio para Inglés I: módulos, audio, quizzes, flashcards y progreso." />
+  <meta name="theme-color" content="#0f172a" />
+  <link rel="manifest" href="manifest.json" />
+  <link rel="icon" href="icons/icon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#app">Saltar al contenido</a>
+  <div class="app-shell">
+    <aside class="sidebar" aria-label="Navegación principal">
+      <div class="brand">
+        <div class="brand-icon">E1</div>
+        <div>
+          <strong>Inglés I</strong>
+          <span>Study Hub</span>
+        </div>
+      </div>
+      <nav class="nav" id="sideNav"></nav>
+      <div class="sidebar-card audio-card">
+        <small>Audio</small>
+        <p>Tocá una palabra o frase en inglés para escucharla con voz IA. Ajustá la velocidad o detené el audio acá.</p>
+        <div class="speed-control compact">
+          <div class="speed-head"><span>Velocidad IA</span><strong id="sidebarRateLabel">0.88x</strong></div>
+          <input type="range" min="0.55" max="1.30" step="0.05" value="0.88" id="sidebarRateRange" aria-label="Velocidad de lectura de audio">
+          <div class="speed-scale"><span>Lento</span><span>Normal</span><span>Rápido</span></div>
+          <button class="mini-stop" id="stopAudioBtn" type="button">Detener audio</button>
+        </div>
+      </div>
+
+      <div class="sidebar-card api-card">
+        <small>Google IA</small>
+        <p>Pegá tu API key acá y activala para usar Tutor IA y voz Gemini.</p>
+        <label class="api-label" for="sidebarGeminiKey">API key</label>
+        <input id="sidebarGeminiKey" class="sidebar-api-input" type="password" autocomplete="off" placeholder="Pegar API key">
+        <button class="mini-stop api-activate" id="sidebarSaveKeyBtn" type="button">Activar IA</button>
+        <button class="mini-stop api-clear" id="sidebarClearKeyBtn" type="button">Borrar clave</button>
+        <p class="api-status" id="sidebarApiStatus">Sin clave activada.</p>
+      </div>
+    </aside>
+
+    <main id="app" class="main" tabindex="-1"></main>
+
+    <nav class="bottom-nav" id="bottomNav" aria-label="Navegación móvil"></nav>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="modules-data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
